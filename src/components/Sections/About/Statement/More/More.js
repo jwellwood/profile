@@ -34,6 +34,6 @@ const panels = [
   },
 ];
 
-const More = () => <Accordion panels={panels} />;
+const More = () => <Accordion panels={panels} styled fluid />;
 
 export default More;

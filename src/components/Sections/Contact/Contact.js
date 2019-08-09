@@ -8,22 +8,10 @@ import {
   Header,
   Image,
 } from 'semantic-ui-react';
+import LinkModal from '../../layout/links/LinkModal';
 import profile from '../../../assets/images/profile.jpg';
-
-const contactDetails = [
-  {
-    icon: 'linkedin',
-    content: 'www.linkedin.com/in/joe-wellwood',
-  },
-  {
-    icon: 'github',
-    content: 'jwellwood',
-  },
-  {
-    icon: 'mail',
-    content: 'joemadriddev@gmail.com',
-  },
-];
+import styles from '../../../assets/styles/Image.module.css';
+import contactDetails from './data';
 
 const Contact = () => {
   return (
@@ -35,9 +23,12 @@ const Contact = () => {
               <Header inverted as="h4" content="Contact" />
               <List link inverted>
                 {contactDetails.map(item => (
-                  <List.Item as="a">
-                    <Icon name={item.icon} />
-                    <List.Content>{item.content}</List.Content>
+                  <List.Item key={item.content}>
+                    <Icon name={item.icon} color="blue" />
+
+                    <List.Content style={{ cursor: 'pointer' }}>
+                      <LinkModal link={item.link}>{item.content} </LinkModal>
+                    </List.Content>
                   </List.Item>
                 ))}
               </List>
@@ -47,7 +38,7 @@ const Contact = () => {
                 src={profile}
                 size="tiny"
                 circular
-                style={{ margin: 'auto' }}
+                className={styles.image_contact}
               />
             </Grid.Column>
           </Grid.Row>

@@ -1,0 +1,14 @@
+.image {
+  -webkit-box-shadow: 1px 6px 47px 12px rgba(52, 152, 219, 0.37);
+  -moz-box-shadow: 1px 6px 47px 12px rgba(52, 152, 219, 0.37);
+  box-shadow: 1px 6px 47px 12px rgba(52, 152, 219, 0.37);
+}
+
+.image:hover {
+  border: 1px solid #fff
+}
+
+.separator {
+  color: #3498DB;
+  font-weight: bold
+}

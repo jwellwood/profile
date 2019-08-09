@@ -12,13 +12,17 @@ const Skill = ({ item }) => {
     <div>
       <Header as="h5" icon textAlign="center" inverted>
         <Popup
-          trigger={<Icon name={item.icon} circular color="blue" bordered />}
+          trigger={
+            <Icon name={item.icon} circular color="blue" bordered inverted />
+          }
           header={item.title}
           content={item.desc}
           position="bottom center"
           style={style}
         />
-        <Header.Content>{item.title}</Header.Content>
+        <Header.Content style={{ fontFamily: 'Muli' }}>
+          {item.title}
+        </Header.Content>
       </Header>
     </div>
   );

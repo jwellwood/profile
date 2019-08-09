@@ -8,7 +8,12 @@ const SectionDivider = ({ title, inverted }) => {
         as="h4"
         className="header"
         horizontal
-        style={{ margin: '1em 0em', textTransform: 'uppercase' }}
+        style={{
+          margin: '1em 0em',
+          textTransform: 'uppercase',
+          color: '#2E86C1',
+          fontFamily: 'Muli',
+        }}
         inverted={inverted}
       >
         <div>{title}</div>

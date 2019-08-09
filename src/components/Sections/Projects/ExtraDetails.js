@@ -8,6 +8,9 @@ import {
   Button,
   List,
 } from 'semantic-ui-react';
+import LinkModal from '../../layout/links/LinkModal';
+
+import styles from './styles/Projects.module.css';
 
 const ExtraDetails = ({ item }) => {
   const contentCard = (
@@ -22,7 +25,8 @@ const ExtraDetails = ({ item }) => {
         <Segment inverted>
           <List horizontal style={{ fontFamily: 'Roboto Mono' }}>
             {item.tech.map(item => (
-              <List.Item key={item} as="p">
+              <List.Item key={item} as="p" style={{ fontSize: '12px' }}>
+                <span className={styles.separator}>| </span>
                 {item}
               </List.Item>
             ))}
@@ -30,12 +34,12 @@ const ExtraDetails = ({ item }) => {
         </Segment>
       </Card.Content>
       <Card.Content extra style={{ textAlign: 'right' }}>
-        <a href={item.link}>
+        <LinkModal link={item.link}>
           <Button icon="home" size="tiny" circular />
-        </a>
-        <a href={item.code}>
+        </LinkModal>
+        <LinkModal link={item.code}>
           <Button icon="github" size="tiny" circular />
-        </a>
+        </LinkModal>
       </Card.Content>
     </Card>
   );

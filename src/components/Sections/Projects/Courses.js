@@ -1,75 +1,63 @@
-import React from 'react';
-import { Grid, Item, Divider } from 'semantic-ui-react';
+import React, { Component } from 'react';
+import { Grid, Accordion, Icon, Item } from 'semantic-ui-react';
 import SectionWrapper from '../../layout/wrappers/SectionWrapper';
+import { courseList } from './data';
+import styles from './styles/Projects.module.css';
+import CourseDetails from './CourseDetails';
 
-const data = (image, title, desc, code) => {
-  return { image, title, desc, code };
-};
-const courseList = [
-  data(
-    '',
-    'Contact Manager',
-    'Manage your client information',
-    'https://github.com/jwellwood/recipes-and-reviews',
-  ),
-  data(
-    '',
-    'Burger Builder',
-    'Create and order your perfect burger',
-    'https://github.com/njwdev/shoppinglisthelper',
-  ),
-  data(
-    '',
-    'Sports Team',
-    'Manchester City FC demo website',
-    'https://github.com/njwdev/shoppinglisthelper',
-  ),
-  data(
-    '',
-    'Background Generator',
+class Courses extends Component {
+  state = { activeIndex: 0 };
 
-    'Generate css gradient backgrounds',
-    'https://github.com/jwellwood/football-stats',
-  ),
-  data(
-    '',
-    'Artist Homepage',
+  handleClick = (e, titleProps) => {
+    const { index } = titleProps;
+    const { activeIndex } = this.state;
+    const newIndex = activeIndex === index ? -1 : index;
 
-    'Homepage for a band / singer',
-    'https://github.com/jwellwood/football-stats',
-  ),
-];
+    this.setState({ activeIndex: newIndex });
+  };
 
-const Courses = () => (
-  <SectionWrapper title="Course Projects">
-    <Grid columns={5} textAlign="center">
-      <Grid.Row centered>
-        {courseList.map(item => (
-          <Grid.Column tablet={5} computer={5} mobile={8} verticalAlign="top">
-            <Item.Image
-              size="tiny"
-              circular
-              style={{ border: '1px solid #444' }}
-              src={item.image}
-            />
-            <Item.Header as="h3" style={{ fontFamily: 'ABeeZee' }}>
-              {item.title}
-            </Item.Header>
-            <Item.Description
-              style={{
-                fontFamily: 'Roboto Mono',
-                fontSize: '12px',
-                color: '#ccc',
-              }}
-            >
-              {item.desc}
-            </Item.Description>
-            <Divider />
-          </Grid.Column>
-        ))}
-      </Grid.Row>
-    </Grid>
-  </SectionWrapper>
-);
+  render() {
+    const { activeIndex } = this.state;
+    const content = courseList.map(item => (
+      <div key={item.index}>
+        <Accordion.Title
+          active={activeIndex === item.index}
+          index={item.index}
+          onClick={this.handleClick}
+          style={{ fontFamily: 'Muli' }}
+        >
+          <Icon name="dropdown" />
+          {item.title}
+        </Accordion.Title>
+        <Accordion.Content active={activeIndex === item.index}>
+          <Grid columns={2}>
+            <Grid.Row centered>
+              <Grid.Column tablet={3} computer={3} mobile={5}>
+                <Item.Image
+                  size="tiny"
+                  circular
+                  src={item.image}
+                  className={styles.image}
+                />
+              </Grid.Column>
+              <Grid.Column tablet={10} computer={12} mobile={11}>
+                <CourseDetails item={item} />
+              </Grid.Column>
+              <Item />
+            </Grid.Row>
+          </Grid>
+        </Accordion.Content>
+      </div>
+    ));
+
+    return (
+      <SectionWrapper title="Course Projects">
+        <Accordion styled fluid>
+          {content}
+        </Accordion>
+      </SectionWrapper>
+    );
+  }
+}
 
 export default Courses;

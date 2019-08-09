@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Icon, Menu, Dropdown, Portal, Segment } from 'semantic-ui-react';
-
+import LinkModal from '../links/LinkModal';
 const style = {
   borderRadius: '0px',
 };
@@ -19,23 +19,31 @@ class Navbar extends Component {
     const { value } = this.state;
     return (
       <Menu inverted style={style}>
-        <Menu.Item link href="https://www.linkedin.com/in/joe-wellwood/">
-          <Icon name="linkedin" />
-        </Menu.Item>
+        <LinkModal link="https://www.linkedin.com/in/joe-wellwood/">
+          <Menu.Item link>
+            <Icon name="linkedin" />
+          </Menu.Item>
+        </LinkModal>
+        <LinkModal link="https://github.com/jwellwood">
+          <Menu.Item link>
+            <Icon name="github" />
+          </Menu.Item>
+        </LinkModal>
 
-        <Menu.Item link href="https://github.com/jwellwood">
-          <Icon name="github" />
-        </Menu.Item>
         <Portal
           closeOnTriggerClick
           openOnTriggerClick
           trigger={
-            <Menu.Item>
-              <Icon name="mail" />
-            </Menu.Item>
+            <div style={{ cursor: 'pointer' }}>
+              <Menu.Item>
+                <Icon name="mail" />
+              </Menu.Item>
+            </div>
           }
         >
           <Segment
+            inverted
+            color="blue"
             style={{
               left: 10,
               position: 'fixed',
@@ -49,7 +57,7 @@ class Navbar extends Component {
 
         <Menu.Item position="right">
           <Dropdown
-            trigger={<Icon name="language" size="large" />}
+            trigger={<Icon name="language" size="large" color="blue" />}
             onChange={this.handleChange}
             options={options}
             value={value}

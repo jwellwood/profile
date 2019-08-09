@@ -4,7 +4,7 @@ import { Header, Image, Segment } from 'semantic-ui-react';
 import Technologies from './Technologies';
 import profile from '../../../assets/images/profile.jpg';
 import ResponsiveContainer from '../../layout/wrappers/ResponsiveContainer';
-
+import styles from '../../../assets/styles/Image.module.css';
 const MainHeader = ({ mobile }) => (
   <ResponsiveContainer>
     <Segment
@@ -30,7 +30,13 @@ const MainHeader = ({ mobile }) => (
       />
 
       <div style={{ margin: '30px' }}>
-        <Image src={profile} size="small" circular style={{ margin: 'auto' }} />
+        <Image
+          src={profile}
+          size="small"
+          circular
+          style={{ margin: 'auto' }}
+          className={styles.image}
+        />
       </div>
       <Header
         as="h3"

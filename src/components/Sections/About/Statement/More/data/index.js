@@ -14,7 +14,7 @@ export const educationItems = [
     'React: The Complete Guide, Web Dev, Udemy',
   ),
   data('check circle outline', '2018', 'React Front-to-Back, Web Dev, Udemy'),
-  data('check circle outline', '2017', 'Zero-to-Mastery, Web Dev, Udemy'),
+  data('check circle outline', '2017', 'The Complete Web Developer, Udemy'),
   data(
     'certificate',
     '2015, British Council, Madrid',
@@ -22,7 +22,7 @@ export const educationItems = [
   ),
   data(
     'university',
-    '2007, University of Lancaster, U',
+    '2007, University of Lancaster, UK',
     'Ba Hons, English Language',
   ),
 ];

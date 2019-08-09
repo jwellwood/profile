@@ -1,23 +1,9 @@
 import React from 'react';
-import { Segment, List, Icon } from 'semantic-ui-react';
 import { educationItems } from './data';
+import AboutWrapper from '../../../../layout/wrappers/AboutWrapper';
 
 const Education = () => {
-  return (
-    <Segment>
-      <List>
-        {educationItems.map(item => (
-          <List.Item as="a" key={item.desc}>
-            <Icon name={item.icon} color="blue" />
-            <List.Content>
-              <List.Header>{item.title}</List.Header>
-              <List.Description>{item.desc}</List.Description>
-            </List.Content>
-          </List.Item>
-        ))}
-      </List>
-    </Segment>
-  );
+  return <AboutWrapper items={educationItems} />;
 };
 
 export default Education;
