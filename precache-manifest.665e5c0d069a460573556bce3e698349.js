@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44c8c7d575b0f18012e0213684ade10e",
+    "revision": "e99bf7d8a1b04a02fde22a6329186da9",
     "url": "/profile/index.html"
   },
   {
-    "revision": "30113b7c3d94ff8b8781",
-    "url": "/profile/static/css/main.d718bf48.chunk.css"
+    "revision": "804ecaac37bb95c36d6a",
+    "url": "/profile/static/css/main.06f49470.chunk.css"
   },
   {
-    "revision": "03a9d60b3c633129d130",
-    "url": "/profile/static/js/2.06ccd252.chunk.js"
+    "revision": "fb522c34f0c596cd2831",
+    "url": "/profile/static/js/2.baa0522c.chunk.js"
   },
   {
-    "revision": "30113b7c3d94ff8b8781",
-    "url": "/profile/static/js/main.1cbc8f87.chunk.js"
+    "revision": "804ecaac37bb95c36d6a",
+    "url": "/profile/static/js/main.4cf52cb0.chunk.js"
   },
   {
     "revision": "189fd871db148202566e",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "abbb1e3fc4c0a1ee48c54e754ff674f3",
     "url": "/profile/static/media/artistpageimage.abbb1e3f.png"
+  },
+  {
+    "revision": "b8ef97600f13eb1de4cec825163809c0",
+    "url": "/profile/static/media/background.b8ef9760.jpg"
   },
   {
     "revision": "efc27d28ae3e283bc4154ecc65819412",
