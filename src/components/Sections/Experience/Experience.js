@@ -3,6 +3,7 @@ import { Accordion } from 'semantic-ui-react';
 import Tech from './Tech';
 import Work from './Work';
 import Education from './Education';
+import SectionWrapper from '../../layout/wrappers/SectionWrapper';
 
 const panels = [
   {
@@ -17,7 +18,7 @@ const panels = [
   {
     key: '2',
     title: {
-      content: 'Experience',
+      content: 'Work',
     },
     content: {
       content: <Work />,
@@ -34,6 +35,10 @@ const panels = [
   },
 ];
 
-const More = () => <Accordion panels={panels} styled fluid />;
+const Experience = () => (
+  <SectionWrapper title="Experience">
+    <Accordion panels={panels} styled fluid />
+  </SectionWrapper>
+);
 
-export default More;
+export default Experience;

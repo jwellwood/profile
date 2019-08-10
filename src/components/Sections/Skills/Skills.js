@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from 'semantic-ui-react';
-import SectionWrapper from '../../../layout/wrappers/SectionWrapper';
+import SectionWrapper from '../../layout/wrappers/SectionWrapper';
 import Skill from './Skill';
 import skillsData from './data';
 

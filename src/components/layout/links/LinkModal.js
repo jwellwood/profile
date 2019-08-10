@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Button, Modal, Header } from 'semantic-ui-react';
+import { Segment, Button, Modal, Header } from 'semantic-ui-react';
 
 class LinkModal extends Component {
   state = { open: false };
@@ -15,28 +15,29 @@ class LinkModal extends Component {
         <div onClick={this.show}>{children}</div>
 
         <Modal
-          basic
-          centered={false}
-          size="tiny"
+          centered
+          size="mini"
           open={open}
           onClose={this.close}
           dimmer="blurring"
         >
-          <Modal.Content>
-            <Header as="h5" color="green">
-              This link will redirect you to:{' '}
-              <p style={{ fontWeight: 'bold' }}>{link}</p>
-            </Header>
+          <Segment color="blue" inverted attached>
+            <Modal.Content>
+              <Header as="h5">
+                You will be redirected to:
+                <p style={{ fontWeight: 'bold' }}>{link}</p>
+              </Header>
 
-            <p>Continue?</p>
-          </Modal.Content>
+              <p>Continue?</p>
+            </Modal.Content>
+          </Segment>
           <Modal.Actions>
-            <Button color="black" onClick={this.close}>
+            <Button color="black" size="mini" onClick={this.close}>
               No
             </Button>
 
-            <Button positive>
-              <a href={link} style={{ color: 'black' }}>
+            <Button color="blue" size="mini">
+              <a href={link} style={{ color: '#fff' }}>
                 Yes
               </a>
             </Button>

@@ -27,7 +27,11 @@ const Contact = () => {
                     <Icon name={item.icon} color="blue" />
 
                     <List.Content style={{ cursor: 'pointer' }}>
-                      <LinkModal link={item.link}>{item.content} </LinkModal>
+                      {item.link ? (
+                        <LinkModal link={item.link}>{item.content} </LinkModal>
+                      ) : (
+                        item.content
+                      )}
                     </List.Content>
                   </List.Item>
                 ))}

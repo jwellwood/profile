@@ -14,7 +14,7 @@ const AboutWrapper = ({ items, code }) => {
                   inverted
                   color="blue"
                   style={{
-                    fontSize: '12px',
+                    fontSize: code ? '12px' : 'inherit',
                     fontFamily: code ? 'Roboto Mono' : 'inherit',
                   }}
                 >

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Grid, Item, Divider, Icon } from 'semantic-ui-react';
-import SectionWrapper from '../../layout/wrappers/SectionWrapper';
-import LinkModal from '../../layout/links/LinkModal';
-import { developmentList } from './data';
+import SectionWrapper from '../../../layout/wrappers/SectionWrapper';
+import LinkModal from '../../../layout/links/LinkModal';
+import { developmentList } from '../data';
 
 const InDevelopment = () => (
-  <SectionWrapper title="In Development" inverted>
+  <SectionWrapper title="In Development">
     <Grid columns={5} textAlign="center">
       <Grid.Row centered>
         {developmentList.map(item => (
@@ -31,7 +31,7 @@ const InDevelopment = () => (
               style={{
                 fontFamily: 'Roboto Mono',
                 fontSize: '11px',
-                color: '#ccc',
+                color: '#333',
               }}
             >
               {item.desc}
