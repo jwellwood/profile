@@ -2,9 +2,13 @@ import React from 'react';
 import { Header, Icon, Popup } from 'semantic-ui-react';
 
 const style = {
-  borderRadius: 0,
-
-  padding: '2em',
+  main: {
+    borderRadius: 0,
+    padding: '1.5em',
+    border: '2px solid #21618C',
+  },
+  font: { fontFamily: 'Work Sans' },
+  title: { fontFamily: 'Work Sans', fontSize: '12px' },
 };
 
 const Skill = ({ item }) => {
@@ -15,14 +19,12 @@ const Skill = ({ item }) => {
           trigger={
             <Icon name={item.icon} circular color="blue" bordered inverted />
           }
-          header={item.title}
+          header={<Header style={style.font}>{item.title}</Header>}
           content={item.desc}
           position="bottom center"
-          style={style}
+          style={style.main}
         />
-        <Header.Content style={{ fontFamily: 'Muli' }}>
-          {item.title}
-        </Header.Content>
+        <Header.Content style={style.title}>{item.title}</Header.Content>
       </Header>
     </div>
   );

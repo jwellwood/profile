@@ -11,7 +11,7 @@ const MainHeader = ({ mobile }) => (
       vertical
       inverted
       style={{
-        height: '80vh',
+        height: '90vh',
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'column',
@@ -22,10 +22,10 @@ const MainHeader = ({ mobile }) => (
         content=".j.w"
         inverted
         style={{
-          fontWeight: 'normal',
+          fontWeight: 'bold',
           fontSize: '4em',
           marginTop: 'auto',
-          fontFamily: 'ABeeZee',
+          fontFamily: 'Work Sans',
         }}
       />
 

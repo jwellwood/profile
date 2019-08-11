@@ -15,7 +15,7 @@ import { productionList } from '../data';
 import styles from '../styles/Projects.module.css';
 
 const InProduction = () => (
-  <SectionWrapper title="In Production" inverted>
+  <SectionWrapper title="In Production" scroll="inDevelopment" inverted>
     <Grid columns={4} textAlign="center">
       <Grid.Row centered>
         {productionList.map(item => (
@@ -39,7 +39,9 @@ const InProduction = () => (
                     />
                   }
                 >
-                  <Modal.Header>{item.title}</Modal.Header>
+                  <Modal.Header style={{ fontFamily: 'Work Sans' }}>
+                    {item.title}
+                  </Modal.Header>
                   <Segment inverted attached>
                     <Modal.Content>
                       <Image
@@ -88,7 +90,7 @@ const InProduction = () => (
                     marginBottom: '5px',
                   }}
                 >
-                  <Item.Header as="h4" style={{ fontFamily: 'Muli' }}>
+                  <Item.Header as="h4" style={{ fontFamily: 'Work Sans ' }}>
                     {item.title}
                   </Item.Header>
                 </Segment>

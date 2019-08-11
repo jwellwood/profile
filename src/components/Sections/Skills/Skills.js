@@ -6,7 +6,7 @@ import skillsData from './data';
 
 const Skills = () => {
   return (
-    <SectionWrapper title="Skills" inverted>
+    <SectionWrapper title="Skills" scroll="experience" inverted>
       <Grid columns={5} textAlign="center">
         <Grid.Row centered>
           {skillsData.map(item => (

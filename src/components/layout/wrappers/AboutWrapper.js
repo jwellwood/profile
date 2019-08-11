@@ -8,7 +8,14 @@ const AboutWrapper = ({ items, code }) => {
           <List.Item key={Math.random()}>
             <Icon name={item.icon} color="blue" />
             <List.Content>
-              <List.Header>{item.title}</List.Header>
+              <List.Header
+                style={{
+                  fontFamily: 'Work Sans',
+                  marginBottom: '5px',
+                }}
+              >
+                {item.title}
+              </List.Header>
               <List.Description>
                 <Segment
                   inverted

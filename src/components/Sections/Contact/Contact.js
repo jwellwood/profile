@@ -20,13 +20,20 @@ const Contact = () => {
         <Grid columns={2}>
           <Grid.Row>
             <Grid.Column verticalAlign="middle" floated="left" mobile={12}>
-              <Header inverted as="h4" content="Contact" />
+              <Header
+                inverted
+                as="h4"
+                style={{ fontFamily: 'Work Sans' }}
+                content="Contact"
+              />
               <List link inverted>
                 {contactDetails.map(item => (
                   <List.Item key={item.content}>
                     <Icon name={item.icon} color="blue" />
 
-                    <List.Content style={{ cursor: 'pointer' }}>
+                    <List.Content
+                      style={item.link ? { cursor: 'pointer' } : null}
+                    >
                       {item.link ? (
                         <LinkModal link={item.link}>{item.content} </LinkModal>
                       ) : (

@@ -13,3 +13,22 @@
   color: #3498DB;
   font-weight: bold
 }
+
+.background {
+  min-height: 300px;
+  position: relative;
+}
+
+.background::after {
+  content: "";
+  background: url('../../../../assets//images/backgrounds/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

@@ -19,7 +19,7 @@ class Courses extends Component {
     const { activeIndex } = this.state;
 
     return (
-      <SectionWrapper title="Course Projects" inverted>
+      <SectionWrapper title="Course Projects" scroll="contact" inverted>
         <Accordion inverted>
           {courseList.map(item => (
             <div key={item.index}>
@@ -27,7 +27,7 @@ class Courses extends Component {
                 active={activeIndex === item.index}
                 index={item.index}
                 onClick={this.handleClick}
-                style={{ fontFamily: 'Muli' }}
+                style={{ fontFamily: 'Work Sans ' }}
               >
                 <Icon name="dropdown" />
                 {item.title}

@@ -24,7 +24,7 @@ const CourseDetails = ({ item }) => {
       {listItems.map(item => (
         <List.Item key={item.title}>
           <List.Content>
-            <List.Header style={{ fontFamily: 'Muli' }}>
+            <List.Header style={{ fontFamily: 'Work Sans ' }}>
               {item.title}
             </List.Header>
 

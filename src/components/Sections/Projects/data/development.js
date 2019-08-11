@@ -1,24 +1,24 @@
 const developmentList = [
   {
     image: 'food',
-    title: 'Recipes and reviews',
+    title: 'Recipes and Reviews',
     date: '2019',
-    desc: 'A collection of vegan recipes and restaurant reviews',
+    desc: 'Vegan recipes and restaurant reviews',
     code: 'https://github.com/jwellwood/recipes-and-reviews',
   },
 
   {
     image: 'unordered list',
-    title: 'Shopping List',
+    title: 'Shared Shopping Lists',
     date: '2019',
-    desc: 'Coordinated shopping lists for couples or roommates',
+    desc: 'Coordinate shopping lists for couples or roommates',
     code: 'https://github.com/njwdev/shoppinglisthelper',
   },
   {
     image: 'pie chart',
-    title: 'Stats Tracker',
+    title: 'Team Stats Tracker',
     date: '2019',
-    desc: 'Recording the progress of your team and the players',
+    desc: 'Record the progress of your team and players',
     code: 'https://github.com/jwellwood/football-stats',
   },
 ];

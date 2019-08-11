@@ -1,14 +1,14 @@
 .background {
-  min-height: 250px;
+  min-height: 300px;
   position: relative;
 }
 
 .background::after {
   content: "";
-  background: url('../../../../assets//images/backgrounds/closing.jpg');
+  background: url('../../../../assets//images/backgrounds/madrid.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.35;
   top: 0;
   left: 0;
   bottom: 0;
@@ -24,8 +24,8 @@
   height: 50vh;
   text-align: center;
   width: 250px;
-  font-size: 20px;
-  color: rgb(247, 248, 248);
-  text-shadow: -3px 4px 9px rgba(26, 25, 25, 0.9);
+  font-size: 25px;
+  color: rgb(33, 97, 140);
+  text-shadow: -3px 4px 11px rgba(51, 51, 51, 0.58);
   font-family: Work Sans
 }
