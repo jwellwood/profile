@@ -2,7 +2,7 @@ import React from 'react';
 import { scroller } from 'react-scroll';
 import { Icon } from 'semantic-ui-react';
 
-const ArrowDown = ({ color, scroll }) => {
+const ArrowDown = ({ scroll }) => {
   const scrollToElement = elem => {
     scroller.scrollTo(elem, {
       duration: 1500,
@@ -14,9 +14,12 @@ const ArrowDown = ({ color, scroll }) => {
     <div style={{ textAlign: 'center', margin: '10px' }}>
       <Icon
         circular
+        inverted
+        color="orange"
         name="angle down"
         onClick={() => scrollToElement(scroll)}
       />
+
       <Icon
         circular
         name="angle double up"

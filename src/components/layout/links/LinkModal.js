@@ -9,7 +9,7 @@ class LinkModal extends Component {
 
   render() {
     const { open } = this.state;
-    const { children, link } = this.props;
+    const { children, link, language } = this.props;
     return (
       <Fragment>
         <div onClick={this.show}>{children}</div>
@@ -24,11 +24,14 @@ class LinkModal extends Component {
           <Segment color="blue" inverted attached>
             <Modal.Content>
               <Header as="h5">
-                You will be redirected to:
+                {language === 'en'
+                  ? 'You will be redirected to:'
+                  : 'Vas a dejar esta página para ir a:'}
+
                 <p style={{ fontWeight: 'bold' }}>{link}</p>
               </Header>
 
-              <p>Continue?</p>
+              <p> {language === 'en' ? 'Continue' : '¿Deseas continuar?'}</p>
             </Modal.Content>
           </Segment>
           <Modal.Actions>
@@ -38,7 +41,7 @@ class LinkModal extends Component {
 
             <Button color="blue" size="mini">
               <a href={link} style={{ color: '#fff' }}>
-                Yes
+                {language === 'en' ? 'Yes' : 'Sí'}
               </a>
             </Button>
           </Modal.Actions>

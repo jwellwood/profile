@@ -13,7 +13,7 @@ import profile from '../../../assets/images/profile.jpg';
 import styles from '../../../assets/styles/Image.module.css';
 import contactDetails from './data';
 
-const Contact = () => {
+const Contact = ({ language }) => {
   return (
     <Segment vertical inverted style={{ padding: '3em 0em' }}>
       <Container>
@@ -24,7 +24,7 @@ const Contact = () => {
                 inverted
                 as="h4"
                 style={{ fontFamily: 'Work Sans' }}
-                content="Contact"
+                content={language === 'en' ? 'Contact' : 'Contacto'}
               />
               <List link inverted>
                 {contactDetails.map(item => (

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Accordion, Icon } from 'semantic-ui-react';
-import Tech from './Tech';
-import Work from './Work';
-import Education from './Education';
+import { educationItems, workItems, techItems } from './data';
 import SectionWrapper from '../../layout/wrappers/SectionWrapper';
 import styles from './styles/Experience.module.css';
+import AboutWrapper from './AboutWrapper';
 
 class Experience extends Component {
   state = { activeIndex: 0 };
@@ -19,20 +18,31 @@ class Experience extends Component {
 
   render() {
     const { activeIndex } = this.state;
+    const { language } = this.props;
 
     const data = (activeIndex, title, content) => {
       return { activeIndex, title, content };
     };
 
-    const panels = [
-      data(1, 'Tech', <Tech />),
-      data(2, 'Work', <Work />),
-      data(3, 'Education', <Education />),
-    ];
+    const panels =
+      language === 'en'
+        ? [
+            data(1, 'Tech', <AboutWrapper items={techItems} code />),
+            data(2, 'Work', <AboutWrapper items={workItems} />),
+            data(3, 'Education', <AboutWrapper items={educationItems} />),
+          ]
+        : [
+            data(1, 'Tecnología', <AboutWrapper items={techItems} code />),
+            data(2, 'Trabajo', <AboutWrapper items={workItems} />),
+            data(3, 'Educación', <AboutWrapper items={educationItems} />),
+          ];
 
     return (
       <div className={styles.background}>
-        <SectionWrapper title="Experience" scroll="inProduction">
+        <SectionWrapper
+          title={language === 'en' ? 'Experience' : 'Experiencia'}
+          scroll="inProduction"
+        >
           <Accordion fluid>
             {panels.map(panel => (
               <div key={panel.activeIndex}>

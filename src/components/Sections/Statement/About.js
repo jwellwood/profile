@@ -1,14 +1,17 @@
 import React from 'react';
 import { Segment } from 'semantic-ui-react';
 import SectionWrapper from '../../layout/wrappers/SectionWrapper';
+import { aboutEng, aboutEsp } from './text';
 import styles from './styles/About.module.css';
-const About = () => {
+const About = ({ language }) => {
+  const languageSet = language === 'en' ? aboutEng : aboutEsp;
   return (
     <div className={styles.background}>
-      <SectionWrapper title="About" scroll="skills">
+      <SectionWrapper title={languageSet.title} scroll="skills">
         <Segment style={{ textAlign: 'center' }} size="large">
-          Originally from the UK, I have lived and worked in Spain since 2010.
-          <br />I have been developing websites for three years.
+          {languageSet.main}
+          <br />
+          {languageSet.sub}
         </Segment>
       </SectionWrapper>
     </div>

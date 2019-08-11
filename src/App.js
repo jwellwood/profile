@@ -13,34 +13,47 @@ import Closing from './components/Sections/Closing/Closing';
 import Contact from './components/Sections/Contact/Contact';
 
 class App extends Component {
+  state = {
+    language: 'en',
+  };
+
+  onChangeLanguage = e => {
+    console.log(e);
+    this.setState({ language: e });
+  };
+
   render() {
+    const { language } = this.state;
     return (
       <div>
         <Element name="top">
-          <Navbar />
+          <Navbar
+            onChangeLanguage={this.onChangeLanguage}
+            language={this.state.language}
+          />
         </Element>
-        <MainHeader />
+        <MainHeader language={language} />
         <Element name="statement">
-          <Statement />
+          <Statement language={language} />
         </Element>
         <Element name="skills">
-          <Skills />
+          <Skills language={language} />
         </Element>
         <Element name="experience">
-          <Experience />
+          <Experience language={language} />
         </Element>
         <Element name="inProduction">
-          <InProduction />
+          <InProduction language={language} />
         </Element>
         <Element name="inDevelopment">
-          <InDevelopment />
+          <InDevelopment language={language} />
         </Element>
         <Element name="courses">
-          <Courses />
+          <Courses language={language} />
         </Element>
-        <Closing />
+        <Closing language={language} />
         <Element name="contact">
-          <Contact />
+          <Contact language={language} />
         </Element>
       </div>
     );

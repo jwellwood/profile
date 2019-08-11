@@ -5,7 +5,7 @@ import Technologies from './Technologies';
 import profile from '../../../assets/images/profile.jpg';
 import ResponsiveContainer from '../../layout/wrappers/ResponsiveContainer';
 import styles from '../../../assets/styles/Image.module.css';
-const MainHeader = ({ mobile }) => (
+const MainHeader = ({ language }) => (
   <ResponsiveContainer>
     <Segment
       vertical
@@ -40,11 +40,13 @@ const MainHeader = ({ mobile }) => (
       </div>
       <Header
         as="h3"
-        content="{ web developer }"
+        content={
+          language === 'en' ? '{ web developer }' : '{ programador web }'
+        }
         inverted
         style={{
           fontWeight: 'normal',
-          marginTop: mobile ? '1em' : '1.5em',
+          marginTop: '1.5em',
           fontFamily: 'Roboto Mono',
         }}
       />

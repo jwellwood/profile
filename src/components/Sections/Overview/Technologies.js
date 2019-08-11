@@ -2,16 +2,7 @@ import React from 'react';
 import { Container, Grid, Icon, Segment } from 'semantic-ui-react';
 
 const Technologies = () => {
-  const data = logo => {
-    return { logo };
-  };
-  const logos = [
-    data('html5'),
-    data('css3'),
-    data('react'),
-    data('js square'),
-    data('node js'),
-  ];
+  const logos = ['html5', 'css3', 'react', 'js square', 'node js'];
 
   return (
     <Container text>
@@ -20,7 +11,7 @@ const Technologies = () => {
           <Grid.Row centered>
             {logos.map(logo => (
               <Grid.Column key={Math.random()} verticalAlign="middle">
-                <Icon inverted size="big" name={logo.logo} color="blue" />
+                <Icon inverted size="big" name={logo} color="blue" />
               </Grid.Column>
             ))}
           </Grid.Row>

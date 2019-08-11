@@ -20,7 +20,7 @@ const Skill = ({ item }) => {
             <Icon name={item.icon} circular color="blue" bordered inverted />
           }
           header={<Header style={style.font}>{item.title}</Header>}
-          content={item.desc}
+          content={item.description}
           position="bottom center"
           style={style.main}
         />
