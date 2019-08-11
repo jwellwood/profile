@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e99bf7d8a1b04a02fde22a6329186da9",
+    "revision": "3f7545e9a12c4b50b72b394ed06e0442",
     "url": "/profile/index.html"
   },
   {
-    "revision": "804ecaac37bb95c36d6a",
-    "url": "/profile/static/css/main.06f49470.chunk.css"
+    "revision": "d790c48566aded539f75",
+    "url": "/profile/static/css/main.4c5241c6.chunk.css"
   },
   {
-    "revision": "fb522c34f0c596cd2831",
-    "url": "/profile/static/js/2.baa0522c.chunk.js"
+    "revision": "584582ceaca6a72bfa75",
+    "url": "/profile/static/js/2.e5ce0c09.chunk.js"
   },
   {
-    "revision": "804ecaac37bb95c36d6a",
-    "url": "/profile/static/js/main.4cf52cb0.chunk.js"
+    "revision": "d790c48566aded539f75",
+    "url": "/profile/static/js/main.9ba3ad26.chunk.js"
   },
   {
     "revision": "189fd871db148202566e",
@@ -32,6 +32,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile/static/media/backgroundgenimage.efc27d28.png"
   },
   {
+    "revision": "c8a4e1050e0aa7f8fd14de38072b35a5",
+    "url": "/profile/static/media/closing.c8a4e105.jpg"
+  },
+  {
+    "revision": "73b8013d32541d54a68076fcd2f3abdc",
+    "url": "/profile/static/media/experience.73b8013d.jpg"
+  },
+  {
     "revision": "0754bc9279a04aadbf6f76b56f6787d7",
     "url": "/profile/static/media/faceimage.0754bc92.png"
   },
@@ -42,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "207526e4f318fab7ec823563d007ed96",
     "url": "/profile/static/media/footballpageimage.207526e4.png"
+  },
+  {
+    "revision": "67309bf44afcd8dfc00b0860eea0d80c",
+    "url": "/profile/static/media/madrid.67309bf4.jpg"
   },
   {
     "revision": "0bd6ef452763c3a6fddc36a385122296",
