@@ -26,7 +26,7 @@ class LinkModal extends Component {
               <Header as="h5">
                 {language === 'en'
                   ? 'You will be redirected to:'
-                  : 'Vas a dejar esta página para ir a:'}
+                  : 'Vas a abandonar esta página para ir a:'}
 
                 <p style={{ fontWeight: 'bold' }}>{link}</p>
               </Header>

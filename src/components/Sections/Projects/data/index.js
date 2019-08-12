@@ -1,5 +1,12 @@
-import productionList from './production';
-import developmentList from './development';
-import courseList from './courses';
+import { productionListEng, productionListEsp } from './production';
+import { developmentListEng, developmentListEsp } from './development';
+import { courseListEng, courseListEsp } from './courses';
 
-export { productionList, developmentList, courseList };
+export {
+  productionListEng,
+  productionListEsp,
+  developmentListEng,
+  developmentListEsp,
+  courseListEng,
+  courseListEsp,
+};

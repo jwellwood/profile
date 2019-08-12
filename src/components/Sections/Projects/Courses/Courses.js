@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Segment, Accordion, Icon } from 'semantic-ui-react';
 import SectionWrapper from '../../../layout/wrappers/SectionWrapper';
-import { courseList } from '../data';
+import { courseListEng, courseListEsp } from '../data';
 import CourseDetails from './CourseDetails';
 
 class Courses extends Component {
@@ -17,9 +17,12 @@ class Courses extends Component {
 
   render() {
     const { activeIndex } = this.state;
-
+    const { language } = this.props;
+    const courseList = language === 'en' ? courseListEng : courseListEsp;
+    const title =
+      language === 'en' ? 'Course Projects' : 'Proyectos Realizados en Cursos';
     return (
-      <SectionWrapper title="Course Projects" scroll="contact" inverted>
+      <SectionWrapper title={title} scroll="contact" inverted>
         <Accordion inverted>
           {courseList.map(item => (
             <div key={item.index}>

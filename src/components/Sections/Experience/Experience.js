@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Accordion, Icon } from 'semantic-ui-react';
-import { educationItems, workItems, techItems } from './data';
+import { educationItems, workItemsEng, workItemsEsp, techItems } from './data';
 import SectionWrapper from '../../layout/wrappers/SectionWrapper';
 import styles from './styles/Experience.module.css';
 import AboutWrapper from './AboutWrapper';
@@ -28,12 +28,12 @@ class Experience extends Component {
       language === 'en'
         ? [
             data(1, 'Tech', <AboutWrapper items={techItems} code />),
-            data(2, 'Work', <AboutWrapper items={workItems} />),
+            data(2, 'Work', <AboutWrapper items={workItemsEng} />),
             data(3, 'Education', <AboutWrapper items={educationItems} />),
           ]
         : [
             data(1, 'Tecnología', <AboutWrapper items={techItems} code />),
-            data(2, 'Trabajo', <AboutWrapper items={workItems} />),
+            data(2, 'Trabajo', <AboutWrapper items={workItemsEsp} />),
             data(3, 'Educación', <AboutWrapper items={educationItems} />),
           ];
 

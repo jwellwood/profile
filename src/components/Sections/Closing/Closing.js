@@ -8,7 +8,7 @@ const Closing = ({ language }) => {
         <p className={styles.text}>
           {language === 'en'
             ? 'Committed to developing fast, modern, responsive web applications'
-            : 'Desarollo sitios webs rapidos, modernos y responsivos'}
+            : 'Desarollo sitios webs rapidos, modernos y profesionales'}
         </p>
       </div>
     </div>

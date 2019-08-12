@@ -29,7 +29,7 @@ const Contact = ({ language }) => {
               <List link inverted>
                 {contactDetails.map(item => (
                   <List.Item key={item.content}>
-                    <Icon name={item.icon} color="blue" />
+                    <Icon name={item.icon} color="blue" inverted />
 
                     <List.Content
                       style={item.link ? { cursor: 'pointer' } : null}

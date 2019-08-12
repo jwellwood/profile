@@ -3,7 +3,7 @@ import { Dropdown, Icon } from 'semantic-ui-react';
 const LanguageSelect = ({ onChangeLanguage }) => {
   return (
     <Dropdown
-      trigger={<Icon name="language" size="large" color="blue" />}
+      trigger={<Icon name="language" size="large" color="blue" inverted />}
       options={[
         {
           text: 'English',

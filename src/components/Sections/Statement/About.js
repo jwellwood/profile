@@ -1,7 +1,7 @@
 import React from 'react';
 import { Segment } from 'semantic-ui-react';
 import SectionWrapper from '../../layout/wrappers/SectionWrapper';
-import { aboutEng, aboutEsp } from './text';
+import { aboutEng, aboutEsp } from './data';
 import styles from './styles/About.module.css';
 const About = ({ language }) => {
   const languageSet = language === 'en' ? aboutEng : aboutEsp;

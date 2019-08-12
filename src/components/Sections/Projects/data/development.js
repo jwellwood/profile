@@ -1,4 +1,4 @@
-const developmentList = [
+export const developmentListEng = [
   {
     image: 'food',
     title: 'Recipes and Reviews',
@@ -23,4 +23,27 @@ const developmentList = [
   },
 ];
 
-export default developmentList;
+export const developmentListEsp = [
+  {
+    image: 'food',
+    title: 'Recetas y Reseñas',
+    date: '2019',
+    desc: 'Recetas veganas y reseñas de restaurantes',
+    code: 'https://github.com/jwellwood/recipes-and-reviews',
+  },
+
+  {
+    image: 'unordered list',
+    title: 'Listas de Compras Compartidas',
+    date: '2019',
+    desc: 'Coordinar listas de compras para parejas o compañeros de piso',
+    code: 'https://github.com/njwdev/shoppinglisthelper',
+  },
+  {
+    image: 'pie chart',
+    title: 'Estadísticas de Equipos',
+    date: '2019',
+    desc: 'Seguir el progreso de tu equipo y jugadores',
+    code: 'https://github.com/jwellwood/football-stats',
+  },
+];

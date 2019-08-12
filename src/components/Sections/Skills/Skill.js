@@ -5,7 +5,7 @@ const style = {
   main: {
     borderRadius: 0,
     padding: '1.5em',
-    border: '2px solid #21618C',
+    background: 'rgba(243, 156, 18, 0.95)',
   },
   font: { fontFamily: 'Work Sans' },
   title: { fontFamily: 'Work Sans', fontSize: '12px' },
@@ -16,14 +16,17 @@ const Skill = ({ item }) => {
     <div>
       <Header as="h5" icon textAlign="center" inverted>
         <Popup
-          trigger={
-            <Icon name={item.icon} circular color="blue" bordered inverted />
-          }
-          header={<Header style={style.font}>{item.title}</Header>}
-          content={item.description}
+          trigger={<Icon name={item.icon} color="blue" inverted />}
           position="bottom center"
           style={style.main}
-        />
+        >
+          <Header style={style.font}>{item.title}</Header>
+          {item.description.map(item => (
+            <ul key={Math.random()}>
+              <li>{item}</li>
+            </ul>
+          ))}
+        </Popup>
         <Header.Content style={style.title}>{item.title}</Header.Content>
       </Header>
     </div>

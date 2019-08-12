@@ -3,16 +3,20 @@ import { Grid, List, Image } from 'semantic-ui-react';
 import LinkModal from '../../../layout/links/LinkModal';
 import styles from '../../../../assets/styles/Image.module.css';
 
-const CourseDetails = ({ item }) => {
+const CourseDetails = ({ item, language }) => {
   const data = (title, value, link) => {
     return { title, value, link };
   };
 
   const listItems = [
-    data('Course', item.course, item.courseLink),
-    data('Info', item.desc, null),
-    data('Tech', item.tech, null),
-    data('Code', 'Github repo', item.code),
+    data(
+      language === 'en' ? 'Course' : 'Título de Curso',
+      item.course,
+      item.courseLink,
+    ),
+    data(language === 'en' ? 'Info' : 'Información', item.desc, null),
+    data(language === 'en' ? 'Tech' : 'Tecnologías', item.tech, null),
+    data(language === 'en' ? 'Code' : 'Código', 'Github repo', item.code),
   ];
 
   const image = (
