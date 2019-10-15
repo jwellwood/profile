@@ -11,7 +11,7 @@ const Technologies = () => {
           <Grid.Row centered>
             {logos.map(logo => (
               <Grid.Column key={Math.random()} verticalAlign="middle">
-                <Icon inverted size="big" name={logo} color="blue" />
+                <Icon inverted size="big" name={logo} color="teal" />
               </Grid.Column>
             ))}
           </Grid.Row>

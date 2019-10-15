@@ -16,7 +16,7 @@ const Skill = ({ item }) => {
     <div>
       <Header as="h5" icon textAlign="center" inverted>
         <Popup
-          trigger={<Icon name={item.icon} color="blue" inverted />}
+          trigger={<Icon name={item.icon} color="teal" inverted />}
           position="bottom center"
           style={style.main}
         >

@@ -15,7 +15,7 @@ const Email = () => {
     >
       <Segment
         inverted
-        color="blue"
+        color="teal"
         style={{
           left: 10,
           position: 'fixed',

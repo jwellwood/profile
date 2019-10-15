@@ -34,7 +34,10 @@ const MainHeader = ({ language }) => (
           src={profile}
           size="small"
           circular
-          style={{ margin: 'auto' }}
+          style={{
+            margin: 'auto',
+            border: '3px solid #128172',
+          }}
           className={styles.image}
         />
       </div>

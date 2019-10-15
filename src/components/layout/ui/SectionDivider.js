@@ -5,9 +5,8 @@ const SectionDivider = ({ title, inverted }) => {
   return (
     <Header
       as="h3"
-      dividing
       className="header"
-      inverted={inverted}
+      inverted
       style={{
         textTransform: 'uppercase',
         fontFamily: 'Work Sans ',

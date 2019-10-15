@@ -6,7 +6,7 @@ const AboutWrapper = ({ items, code }) => {
       <List inverted>
         {items.map(item => (
           <List.Item key={Math.random()}>
-            <Icon name={item.icon} color="blue" />
+            <Icon name={item.icon} color="teal" />
             <List.Content>
               <List.Header
                 style={{
@@ -19,7 +19,7 @@ const AboutWrapper = ({ items, code }) => {
               <List.Description>
                 <Segment
                   inverted
-                  color="blue"
+                  color="teal"
                   style={{
                     fontSize: code ? '12px' : 'inherit',
                     fontFamily: code ? 'Roboto Mono' : 'inherit',

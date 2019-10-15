@@ -21,7 +21,7 @@ class LinkModal extends Component {
           onClose={this.close}
           dimmer="blurring"
         >
-          <Segment color="blue" inverted attached>
+          <Segment color="teal" inverted attached>
             <Modal.Content>
               <Header as="h5">
                 {language === 'en'
@@ -39,7 +39,7 @@ class LinkModal extends Component {
               No
             </Button>
 
-            <Button color="blue" size="mini">
+            <Button color="teal" size="mini">
               <a href={link} style={{ color: '#fff' }}>
                 {language === 'en' ? 'Yes' : 'Sí'}
               </a>

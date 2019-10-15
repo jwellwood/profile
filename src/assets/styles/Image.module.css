@@ -1,12 +1,12 @@
 .image {
-  -webkit-box-shadow: 1px 6px 47px 31px rgba(52, 152, 219, 0.37);
-  -moz-box-shadow: 1px 6px 47px 31px rgba(52, 152, 219, 0.37);
-  box-shadow: 1px 6px 47px 31px rgba(52, 152, 219, 0.37);
+  -webkit-box-shadow: 1px 6px 47px 31px rgba(18, 129, 114, 0.37);
+  -moz-box-shadow: 1px 6px 47px 31px rgba(18, 129, 114, 0.37);
+  box-shadow: 1px 6px 47px 31px rgba(18, 129, 114, 0.37);
 }
 
 .image_contact {
-  -webkit-box-shadow: 1px 1px 47px 1px rgba(52, 152, 219, 0.37);
-  -moz-box-shadow: 1px 1px 47px 1px rgba(52, 152, 219, 0.37);
-  box-shadow: 1px 1px 47px 1px rgba(52, 152, 219, 0.37);
+  -webkit-box-shadow: 1px 1px 47px 1px rgba(18, 129, 114, 0.37);
+  -moz-box-shadow: 1px 1px 47px 1px rgba(18, 129, 114, 0.37);
+  box-shadow: 1px 1px 47px 1px rgba(18, 129, 114, 0.37);
   margin: auto;
 }
