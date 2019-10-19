@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Responsive, Sidebar } from 'semantic-ui-react';
 
 const getWidth = () => {
@@ -21,7 +21,7 @@ class DesktopContainer extends Component {
 }
 
 DesktopContainer.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 const MobileContainer = ({ children }) => {
@@ -37,7 +37,7 @@ const MobileContainer = ({ children }) => {
 };
 
 MobileContainer.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 const ResponsiveContainer = ({ children }) => (
@@ -48,7 +48,7 @@ const ResponsiveContainer = ({ children }) => (
 );
 
 ResponsiveContainer.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 export default ResponsiveContainer;

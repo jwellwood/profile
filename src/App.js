@@ -1,63 +1,48 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Element } from 'react-scroll';
-// Elements
-import Navbar from './components/layout/navs/Navbar';
-import MainHeader from './components/Sections/Overview/MainHeader';
-import Statement from './components/Sections/Statement/About';
-import Skills from './components/Sections/Skills/Skills';
-import Experience from './components/Sections/Experience/Experience';
-import InProduction from './components/Sections/Projects/InProduction/InProduction';
-import InDevelopment from './components/Sections/Projects/InDevelopment/InDevelopment';
-import Courses from './components/Sections/Projects/Courses/Courses';
-import Closing from './components/Sections/Closing/Closing';
-import Contact from './components/Sections/Contact/Contact';
 
-class App extends Component {
-  state = {
-    language: 'en',
+// Internal
+import SectionDivider from './components/layout/Dividers/SectionDivider';
+import Navbar from './components/layout/NavBar/Navbar';
+import Main from './components/Main/Main';
+import MainMenu from './components/MainMenu/MainMenu';
+import About from './components/AboutMe/AboutMe';
+import Portfolio from './components/Portfolio/Portfolio';
+import Statement from './components/Contact/Statement';
+import Footer from './components/Contact/Contact';
+
+const App = () => {
+  const [language, setLanguage] = useState('en');
+
+  const onChangeLanguage = e => {
+    setLanguage(e);
   };
 
-  onChangeLanguage = e => {
-    console.log(e);
-    this.setState({ language: e });
-  };
-
-  render() {
-    const { language } = this.state;
-    return (
-      <div>
-        <Element name="top">
-          <Navbar
-            onChangeLanguage={this.onChangeLanguage}
-            language={this.state.language}
-          />
-        </Element>
-        <MainHeader language={language} />
-        <Element name="statement">
-          <Statement language={language} />
-        </Element>
-        <Element name="skills">
-          <Skills language={language} />
-        </Element>
-        <Element name="experience">
-          <Experience language={language} />
-        </Element>
-        <Element name="inProduction">
-          <InProduction language={language} />
-        </Element>
-        <Element name="inDevelopment">
-          <InDevelopment language={language} />
-        </Element>
-        <Element name="courses">
-          <Courses language={language} />
-        </Element>
-        <Closing language={language} />
-        <Element name="contact">
-          <Contact language={language} />
-        </Element>
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <Element name='top'>
+        <Navbar onChangeLanguage={onChangeLanguage} language={language} />
+      </Element>
+      <Main language={language} />
+      <SectionDivider direction='right' />
+      <Element name='menu'>
+        <MainMenu language={language} />
+        <SectionDivider direction='left' />
+      </Element>
+      <Element name='about'>
+        <About language={language} />
+        <SectionDivider direction='right' />
+      </Element>
+      <Element name='portfolio'>
+        <Portfolio language={language} />
+        <SectionDivider direction='left' />
+      </Element>
+      <Element name='contact'>
+        <Statement language={language} />
+        <Footer language={language} />
+      </Element>
+    </div>
+  );
+};
 
 export default App;
