@@ -6,7 +6,7 @@ import { emailStyles as styles } from '../styles';
 
 const Email = () => {
   const [copied, setcopied] = useState(false);
-  const email = 'joemadriddev@gmail.com';
+  const email = 'joewellwood@gmail.com';
   return (
     <Portal
       closeOnTriggerClick

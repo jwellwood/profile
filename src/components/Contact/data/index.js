@@ -11,7 +11,7 @@ export const contactDetails = [
   },
   {
     icon: 'mail',
-    content: 'joemadriddev@gmail.com'
+    content: 'joewellwood@gmail.com'
   }
 ];
 
