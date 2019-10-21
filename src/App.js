@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
-
 // Internal
 import SectionDivider from './components/layout/Dividers/SectionDivider';
 import Navbar from './components/layout/NavBar/Navbar';
@@ -9,7 +8,7 @@ import MainMenu from './components/MainMenu/MainMenu';
 import About from './components/AboutMe/AboutMe';
 import Portfolio from './components/Portfolio/Portfolio';
 import Statement from './components/Contact/Statement';
-import Footer from './components/Contact/Contact';
+import Contact from './components/Contact/Contact';
 
 const App = () => {
   const [language, setLanguage] = useState('en');
@@ -39,7 +38,7 @@ const App = () => {
       </Element>
       <Element name='contact'>
         <Statement language={language} />
-        <Footer language={language} />
+        <Contact language={language} />
       </Element>
     </div>
   );

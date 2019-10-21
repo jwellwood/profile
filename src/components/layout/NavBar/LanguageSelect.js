@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dropdown, Icon } from 'semantic-ui-react';
+
 const LanguageSelect = ({ onChangeLanguage }) => {
   return (
     <Dropdown

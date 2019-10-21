@@ -1,15 +1,12 @@
 import React from 'react';
-import SquareWrapper from '../layout/wrappers/SquareWrapper';
-import { about, title } from './data';
 import { Icon } from 'semantic-ui-react';
+// Internal
+import { about, title } from './data';
+import { styles } from './styles';
 import CurvedWrapper from '../layout/wrappers/CurvedWrapper';
+import SquareWrapper from '../layout/wrappers/SquareWrapper';
 
 const AboutMe = ({ language }) => {
-  const styles = {
-    icon: {
-      margin: '10px auto'
-    }
-  };
   return (
     <CurvedWrapper title={language === 'en' ? title.eng : title.esp}>
       <SquareWrapper>

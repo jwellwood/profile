@@ -1,26 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Portal, Menu, Icon, Segment } from 'semantic-ui-react';
-import { colors } from '../../../assets/styles/colors';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+// Internal
+import { emailStyles as styles } from '../styles';
 
 const Email = () => {
-  const styles = {
-    icon: {
-      cursor: 'pointer'
-    },
-    message: {
-      background: colors.lightBlue,
-      color: colors.mainBlue,
-      fontWeight: 'bold',
-      left: 10,
-      position: 'fixed',
-      top: 10,
-      zIndex: 1000
-    }
-  };
+  const [copied, setcopied] = useState(false);
+  const email = 'joemadriddev@gmail.com';
   return (
     <Portal
       closeOnTriggerClick
       openOnTriggerClick
+      onClose={() => setcopied(false)}
       trigger={
         <div style={styles.icon}>
           <Menu.Item>
@@ -29,7 +20,18 @@ const Email = () => {
         </div>
       }
     >
-      <Segment style={styles.message}>joemadriddev@gmail.com</Segment>
+      <Segment style={styles.message}>
+        {email}{' '}
+        <CopyToClipboard text={email} onCopy={() => setcopied(true)}>
+          <Icon
+            style={styles.copyIcon}
+            bordered
+            circular
+            name='copy outline'
+          ></Icon>
+        </CopyToClipboard>
+        {copied ? <span style={styles.copied}>Copied!</span> : null}
+      </Segment>
     </Portal>
   );
 };

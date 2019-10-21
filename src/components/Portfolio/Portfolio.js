@@ -1,15 +1,11 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
-import ProjectList from './ProjectList';
+// Internal
+import { portfolioStyles as styles } from './styles';
 import SquareWrapper from '../layout/wrappers/SquareWrapper';
+import ProjectList from './ProjectList';
 
 const Portfolio = ({ language }) => {
-  const styles = {
-    section: {
-      textAlign: 'center'
-    }
-  };
-  // const languageSet = language === 'en' ? aboutEng : aboutEsp;
   return (
     <Container style={{ margin: '20px' }}>
       <SquareWrapper

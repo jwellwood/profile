@@ -1,40 +1,12 @@
 import React from 'react';
 import { Modal, Icon, Header, Image } from 'semantic-ui-react';
-import { colors } from '../../../assets/styles/colors';
+// Internal
+import { modalContentStyles as styles } from '../styles';
 import TechList from './TechList';
 import Images from './Images';
 import Buttons from './Buttons';
 
 const ModalContent = ({ language, item, type }) => {
-  const styles = {
-    header: {
-      margin: '10px auto',
-      color: colors.lightBlue
-    },
-    headerMain: {
-      margin: '10px auto',
-      color: colors.mainBlue
-    },
-    mainImage: { border: `2px solid ${colors.mainBlue}`, margin: 'auto' },
-    icon: {
-      border: `2px solid ${colors.mainTeal}`,
-      background: colors.lightBlue,
-      color: colors.mainTeal
-    },
-    iconMain: {
-      border: `2px solid ${colors.mainBlue}`,
-      background: colors.secondaryBlue,
-      color: colors.lightBlue
-    },
-    modalHeader: {
-      fontFamily: 'Work Sans',
-      background: colors.mainBlue,
-      color: colors.lightBlue
-    },
-    mainContent: {
-      color: colors.mainBlue
-    }
-  };
   return (
     <Modal
       closeIcon
@@ -72,7 +44,6 @@ const ModalContent = ({ language, item, type }) => {
       </Modal.Header>
       <Modal.Content>
         <Icon size='small' src={item.image} style={{ margin: 'auto' }} />
-
         <Modal.Description style={styles.mainContent}>
           {language === 'en' ? item.desc.eng : item.desc.esp}
         </Modal.Description>

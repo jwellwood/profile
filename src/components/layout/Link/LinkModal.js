@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import { Button, Modal } from 'semantic-ui-react';
-import { colors } from '../../../assets/styles/colors';
+// Internal
+import { linkModalStyles as styles } from '../styles';
 
 const LinkModal = props => {
   const [open, setOpen] = useState(false);
@@ -11,23 +12,6 @@ const LinkModal = props => {
 
   const close = () => {
     setOpen(false);
-  };
-
-  const styles = {
-    title: {
-      background: colors.mainBlue,
-      color: colors.lightBlue
-    },
-    content: {
-      color: colors.secondaryBlue
-    },
-    link: {
-      fontWeight: 'bold'
-    },
-    button: {
-      color: colors.lightBlue,
-      background: colors.mainTeal
-    }
   };
 
   const { children, link, language } = props;

@@ -1,27 +1,15 @@
 import React from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
+// Internal
+import { navData as data } from './data';
+import { navBarStyle as styles } from '../styles';
+import LinkModal from '../Link/LinkModal';
 import LanguageSelect from './LanguageSelect';
 import Email from './Email';
-import LinkModal from '../Link/LinkModal';
-const style = {
-  borderRadius: '0px',
-  backgroundColor: 'transparent'
-};
 
 const Navbar = ({ onChangeLanguage, language }) => {
-  const data = [
-    {
-      link: 'https://www.linkedin.com/in/joe-wellwood/',
-      icon: 'linkedin'
-    },
-    {
-      link: 'https://github.com/jwellwood',
-      icon: 'github'
-    }
-  ];
-
   return (
-    <Menu inverted style={style}>
+    <Menu inverted style={styles}>
       {data.map(item => (
         <LinkModal key={item.link} language={language} link={item.link}>
           <Menu.Item link>

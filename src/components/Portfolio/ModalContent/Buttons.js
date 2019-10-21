@@ -1,20 +1,11 @@
 import React from 'react';
-import { buttons } from '../data';
 import { Button } from 'semantic-ui-react';
+// Internal
+import { buttons } from '../data';
+import { buttonStyles as styles } from '../styles';
 import LinkModal from '../../layout/Link/LinkModal';
-import { colors } from '../../../assets/styles/colors';
 
 const Buttons = ({ language, item }) => {
-  const styles = {
-    linkButton: {
-      background: colors.mainTeal,
-      color: colors.lightBlue
-    },
-    codeButton: {
-      background: colors.lightBlue,
-      color: colors.secondaryBlue
-    }
-  };
   return (
     <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
       {item.link ? (

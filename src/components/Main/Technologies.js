@@ -1,26 +1,18 @@
 import React from 'react';
 import { Container, Grid, Icon, Segment } from 'semantic-ui-react';
-import { colors } from '../../assets/styles/colors';
+import { techStyle as styles } from './styles';
 
 const Technologies = () => {
   const logos = ['html5', 'css3', 'react', 'js square', 'node js'];
-  const style = {
-    icons: {
-      color: colors.lightBlue
-    },
-    container: {
-      border: `1px solid ${colors.lightBlue}`,
-      background: colors.secondaryBlue
-    }
-  };
+
   return (
     <Container text>
-      <Segment basic attached='bottom' style={style.container}>
+      <Segment basic attached='bottom' style={styles.container}>
         <Grid columns={5} centered textAlign='center'>
           <Grid.Row centered>
             {logos.map(logo => (
               <Grid.Column key={Math.random()} verticalAlign='middle'>
-                <Icon size='big' name={logo} style={style.icons} />
+                <Icon size='big' name={logo} style={styles.icons} />
               </Grid.Column>
             ))}
           </Grid.Row>

@@ -1,24 +1,17 @@
 import React from 'react';
-import TechList from './TechList';
+import { Grid } from 'semantic-ui-react';
+// Internal
 import { statement } from './data';
+import { statementStyles as styles } from './styles';
+import TechList from './TechList';
 
 const Statement = ({ language }) => {
-  const styles = {
-    container: {
-      margin: '1.5rem auto',
-      textAlign: 'center'
-    },
-    text: {
-      margin: '3rem auto',
-      fontSize: '2rem',
-      width: '50%'
-    }
-  };
   return (
     <div style={styles.container}>
-      <p style={styles.text}>
-        {language === 'en' ? statement.eng : statement.esp}
-      </p>
+      <Grid.Column mobile={12} computer={6} style={styles.text}>
+        <p>{language === 'en' ? statement.eng : statement.esp}</p>
+      </Grid.Column>
+
       <TechList language={language} />
     </div>
   );

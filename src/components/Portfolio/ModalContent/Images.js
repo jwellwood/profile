@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { Image, Button } from 'semantic-ui-react';
+//Internal
+import { imageStyles as styles } from '../styles';
 
 const Images = ({ language, images }) => {
   const [open, setOpen] = useState(false);
+
   const showScreenshots = () => {
     setOpen(!open);
   };
-  const styles = {
-    button: {
-      margin: '10px auto'
-    }
-  };
+
   return (
     <div>
       <Button
@@ -29,10 +28,7 @@ const Images = ({ language, images }) => {
           : 'Ver pantallazos'}
       </Button>
       {open ? (
-        <Image.Group
-          size='small'
-          style={{ margin: 'auto', textAlign: 'center' }}
-        >
+        <Image.Group size='small' style={styles.images}>
           {images.map(image => (
             <Image bordered key={image} src={image}></Image>
           ))}

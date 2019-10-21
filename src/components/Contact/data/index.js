@@ -24,3 +24,14 @@ export const statement = {
   eng: 'I build fast, modern, responsive web apps',
   esp: 'Desarrollo apps rápidas, modernas y profesionales'
 };
+
+export const techData = [
+  'ES6+',
+  'React',
+  'Angular',
+  'HTML5',
+  'CSS3',
+  'NodeJS',
+  'Firebase',
+  'MongoDB'
+];

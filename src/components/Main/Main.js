@@ -1,34 +1,13 @@
 import React from 'react';
-import ResponsiveContainer from '../layout/wrappers/ResponsiveContainer';
 import { Segment, Header } from 'semantic-ui-react';
-import { colors } from '../../assets/styles/colors';
+// Internal
+import { mainStyles as styles } from './styles';
+import { scrollToElement } from '../layout/Scroller/Scroller';
+import ResponsiveContainer from '../layout/wrappers/ResponsiveContainer';
 import Technologies from './Technologies';
 import ProfileImage from './ProfileImage';
-import { scrollToElement } from '../layout/Scroller/Scroller';
 
 const Main = ({ language }) => {
-  const styles = {
-    container: {
-      height: '92vh',
-      textAlign: 'center',
-      display: 'flex',
-      flexDirection: 'column',
-      background: colors.mainBlue
-    },
-    mainHeader: {
-      color: colors.lightBlue,
-      fontWeight: 'bold',
-      fontSize: '4em',
-      marginTop: 'auto',
-      fontFamily: 'Work Sans'
-    },
-    subHeader: {
-      marginTop: '1.5em',
-      fontFamily: 'Roboto Mono',
-      color: colors.lightBlue
-    },
-    tech: { marginTop: 'auto', bottom: 0 }
-  };
   return (
     <ResponsiveContainer>
       <Segment style={styles.container}>

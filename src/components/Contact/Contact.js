@@ -1,35 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Grid, Icon, Portal, Segment } from 'semantic-ui-react';
-import LinkModal from '../layout/Link/LinkModal';
+// Internal
 import { contactDetails, title } from './data';
-import { colors } from '../../assets/styles/colors';
+import { styles } from './styles';
 import CurvedWrapper from '../layout/wrappers/CurvedWrapper';
+import LinkModal from '../layout/Link/LinkModal';
+import Email from './Email';
 
 const Contact = ({ language }) => {
-  const styles = {
-    container: {
-      margin: 'auto'
-    },
-    icon: {
-      color: colors.lightBlue,
-      background: colors.secondaryBlue,
-      margin: 'auto'
-    },
-    column: {
-      margin: 'auto',
-      alignItems: 'center'
-    },
-    message: {
-      width: '100%',
-      background: colors.lightBlue,
-      color: colors.mainBlue,
-      fontWeight: 'bold',
-      left: '25%',
-      position: 'fixed',
-      bottom: 10,
-      zIndex: 1000
-    }
-  };
+  const [copied, setcopied] = useState(false);
   return (
     <CurvedWrapper title={language === 'en' ? title.eng : title.esp}>
       <Grid centered style={styles.container} columns={3}>
@@ -39,6 +18,7 @@ const Contact = ({ language }) => {
               key={item.icon}
               closeOnTriggerClick
               openOnTriggerClick
+              onClose={() => setcopied(false)}
               trigger={
                 <Icon
                   style={styles.icon}
@@ -51,10 +31,12 @@ const Contact = ({ language }) => {
             >
               {item.link ? (
                 <LinkModal language={language} link={item.link}>
-                  <Segment style={styles.message}>{item.content}</Segment>
+                  <Segment style={styles.message}>
+                    {item.content} <Icon name='arrow circle right'></Icon>
+                  </Segment>
                 </LinkModal>
               ) : (
-                <Segment style={styles.message}>{item.content}</Segment>
+                <Email item={item} copied={copied} setcopied={setcopied} />
               )}
             </Portal>
           ))}
