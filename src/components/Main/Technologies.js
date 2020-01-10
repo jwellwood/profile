@@ -3,7 +3,7 @@ import { Container, Grid, Icon, Segment } from 'semantic-ui-react';
 import { techStyle as styles } from './styles';
 
 const Technologies = () => {
-  const logos = ['html5', 'css3', 'react', 'js square', 'node js'];
+  const logos = ['html5', 'angular', 'react', 'js square', 'node js'];
 
   return (
     <Container text>

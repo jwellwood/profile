@@ -8,7 +8,14 @@ import {
   RWAdd,
   RWReport,
   RWSignup,
-  RWLogo
+  RWLogo,
+  RRHome,
+  RRRecipe,
+  RRRecipeList,
+  RRRecipeMob,
+  RRReviewList,
+  RRUpload,
+  RRAdd
 } from '../../../assets/images/InProduction';
 
 import {
@@ -21,6 +28,26 @@ import {
 } from '../../../assets/images/OtherProjects';
 
 export const mainProjectsData = [
+  {
+    title: { eng: 'Recipes & Reviews', esp: 'Recetas y Restaurantes' },
+    mainImage: RRHome,
+    image: [RRRecipe, RRRecipeList, RRRecipeMob, RRReviewList, RRUpload, RRAdd],
+    desc: {
+      eng:
+        'A website for a vegan blogger to keep a collection of recipes and restaurant reviews. Admin users can add, update, and delete new recipes and reviews using Angular Reactive Forms, and can create image galleries with the help of Firebase storage.',
+      esp:
+        'Una página web para mostar una colección de recetes y críticas de un blogger vegano. Usarios admin pueden añadir, editar y quitar recetas y críticas nuevas usando los Reactive Forms de Angular y se puede crear galerías de fotos gracias al almacenamiento de Firebase.'
+    },
+    tech: [
+      'Angular 8',
+      'Angular Router',
+      'Angular Reactive Forms',
+      'Bootstrap 4',
+      'Firebase (auth/firestore/storage/hosting)'
+    ],
+    link: 'https://pbponch.firebaseapp.com/',
+    code: 'https://github.com/jwellwood/recipes-and-reviews'
+  },
   {
     title: { eng: 'Report Writer', esp: 'Redactor de Informes' },
     mainImage: RWLogo,
