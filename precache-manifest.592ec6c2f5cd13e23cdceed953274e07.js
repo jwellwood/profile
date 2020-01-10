@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "09d293be363ab068d80984e4f7a30daa",
+    "revision": "b55383cc0eb8d64ab546d7b3f94cdc48",
     "url": "/profile/index.html"
   },
   {
-    "revision": "73059e45329b4ea4f04f",
+    "revision": "649eece1e6b32be0fd78",
     "url": "/profile/static/css/main.fd2cffa8.chunk.css"
   },
   {
-    "revision": "fa0c56f1446a1f9a8bfe",
-    "url": "/profile/static/js/2.8c21c2a2.chunk.js"
+    "revision": "62f7dd057b901f5fd679",
+    "url": "/profile/static/js/2.e888ecbd.chunk.js"
   },
   {
-    "revision": "73059e45329b4ea4f04f",
-    "url": "/profile/static/js/main.4b7a94ed.chunk.js"
+    "revision": "649eece1e6b32be0fd78",
+    "url": "/profile/static/js/main.ec1fa8f6.chunk.js"
   },
   {
     "revision": "189fd871db148202566e",
@@ -46,6 +46,34 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e5ebf608bd13451e7087390763407632",
     "url": "/profile/static/media/MRStats.e5ebf608.png"
+  },
+  {
+    "revision": "06ba7b2aa1a21a3d9da90ea0bf45f131",
+    "url": "/profile/static/media/RRAdd.06ba7b2a.png"
+  },
+  {
+    "revision": "4c9368c5e00a472d21612f19531fb54b",
+    "url": "/profile/static/media/RRHome.4c9368c5.png"
+  },
+  {
+    "revision": "853d0d497b18990eb5c4a06dae18276e",
+    "url": "/profile/static/media/RRRecipe.853d0d49.png"
+  },
+  {
+    "revision": "206c4e7ebf8fed272dcbbb6f047a53ac",
+    "url": "/profile/static/media/RRRecipeList.206c4e7e.png"
+  },
+  {
+    "revision": "0e82cd9ff00b1f501be1a5f836558890",
+    "url": "/profile/static/media/RRRecipeMob.0e82cd9f.png"
+  },
+  {
+    "revision": "f03c5a60200ea9deee34b9c631f41017",
+    "url": "/profile/static/media/RRReviewList.f03c5a60.png"
+  },
+  {
+    "revision": "b0f9349d6bfaaf0551506c5724487e0a",
+    "url": "/profile/static/media/RRUpload.b0f9349d.png"
   },
   {
     "revision": "d2c1848789cde7ab973f6cb14e365328",
