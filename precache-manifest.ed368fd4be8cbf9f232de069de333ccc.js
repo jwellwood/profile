@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb25afbbd37f3c5cd239847fb66e0b51",
+    "revision": "e966379e9a51384b1b1f1452ddff5e94",
     "url": "/profile/index.html"
   },
   {
-    "revision": "14107cd4a2da5f67779a",
+    "revision": "c99c9ee363ab2b3ad4d4",
     "url": "/profile/static/css/main.23eb2de5.chunk.css"
   },
   {
-    "revision": "8de0b25003f1b1d78b63",
-    "url": "/profile/static/js/2.47dfe4c9.chunk.js"
+    "revision": "405430959782fd5b5cf2",
+    "url": "/profile/static/js/2.0a66dd9c.chunk.js"
   },
   {
-    "revision": "14107cd4a2da5f67779a",
-    "url": "/profile/static/js/main.0505c5a2.chunk.js"
+    "revision": "c99c9ee363ab2b3ad4d4",
+    "url": "/profile/static/js/main.f91da0e8.chunk.js"
   },
   {
     "revision": "189fd871db148202566e",
@@ -72,28 +72,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile/static/media/football.ce337856.jpeg"
   },
   {
-    "revision": "af248688096635220208721ceff1404b",
-    "url": "/profile/static/media/mr-fullscreen.af248688.png"
+    "revision": "54d7e80422a953e5b2f93864b736bb31",
+    "url": "/profile/static/media/mr-fullscreen.54d7e804.png"
   },
   {
-    "revision": "e5c8bd460941d8f00d0df63a9a9d4777",
-    "url": "/profile/static/media/mr-player-stats.e5c8bd46.png"
+    "revision": "1144f2929c91cc01bdcb6faf847c2411",
+    "url": "/profile/static/media/mr-player-stats.1144f292.png"
   },
   {
-    "revision": "73ec1df8094ab44cb8d534cd6bc9b910",
-    "url": "/profile/static/media/mr-player.73ec1df8.png"
+    "revision": "d7940bc251661f2f550ae77a7394e316",
+    "url": "/profile/static/media/mr-player.d7940bc2.png"
   },
   {
-    "revision": "6d23afb5e694ce932e6e2d31424daded",
-    "url": "/profile/static/media/mr-results.6d23afb5.png"
+    "revision": "50e3a5e48d59c63b766af2559d0da88a",
+    "url": "/profile/static/media/mr-results.50e3a5e4.png"
   },
   {
-    "revision": "44378cf25115ea081c8317a7d3a5943a",
-    "url": "/profile/static/media/mr-squad.44378cf2.png"
-  },
-  {
-    "revision": "ae0cbce7d7323e064797b9e0fc425d18",
-    "url": "/profile/static/media/mr-stats.ae0cbce7.png"
+    "revision": "bae1e05a4b24b1aaf4dce8223f2df3ad",
+    "url": "/profile/static/media/mr-stats.bae1e05a.png"
   },
   {
     "revision": "1109b84a8246270e137dda985d4c1d27",
