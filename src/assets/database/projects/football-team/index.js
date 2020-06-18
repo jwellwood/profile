@@ -2,7 +2,7 @@ import football from '../../../images/projects/external/football.jpeg';
 import home from '../../../images/projects/football/mr-fullscreen.png';
 import stats from '../../../images/projects/football/mr-stats.png';
 import results from '../../../images/projects/football/mr-results.png';
-import squad from '../../../images/projects/football/mr-squad.png';
+// import squad from '../../../images/projects/football/mr-squad.png';
 import player from '../../../images/projects/football/mr-player-stats.png';
 import targets from '../../../images/projects/football/mr-player.png';
 
@@ -15,10 +15,12 @@ const desc_esp =
 const technologies = [
   'React',
   'Material UI',
+  'Node JS',
+  'Express',
+  'MongoDB',
   'React ChartJS 2',
-  'React Table',
-  'Firebase',
-  'React Redux Firebase'
+  'Cloudinary (image hosting)',
+  'Hosted on Heroku',
 ];
 
 export const football_team = {
@@ -28,15 +30,15 @@ export const football_team = {
   description: { eng: desc_eng, esp: desc_esp },
   screenshots: [
     { image: home, caption: 'Homepage' },
+    { image: targets, caption: 'Profile' },
     { image: stats, caption: 'Stats' },
     { image: results, caption: 'Results' },
-    { image: squad, caption: 'Squad' },
+    // { image: squad, caption: 'Squad' },
     { image: player, caption: 'Player stats' },
-    { image: targets, caption: 'Targets' }
   ],
   tech_list: technologies,
   links: {
-    web: 'https://team-stats-31c64.firebaseapp.com/',
-    github: 'https://github.com/jwellwood/teamstats'
-  }
+    web: 'https://madrid-reds.herokuapp.com/',
+    github: 'https://github.com/jwellwood/football-team-prod',
+  },
 };

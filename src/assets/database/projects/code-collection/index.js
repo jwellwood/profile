@@ -5,7 +5,7 @@ import example from '../../../images/projects/code/code-example.png';
 import login from '../../../images/projects/code/code-login.png';
 import add from '../../../images/projects/code/code-add.png';
 // Text
-const title_eng = 'Code Blocks';
+const title_eng = 'Code Collection';
 const title_esp = 'Códigos Útiles';
 const desc_eng =
   'A collection of useful codeblocks. Created as a place to store chunks of code which developers might need regularly. With options to separate the code blocks into categories such as React, Sass, Javascript and Typescript, this website will only continue to grow.';
@@ -16,7 +16,7 @@ const technologies = [
   'Angular Material',
   'Prism JS',
   'Firebase',
-  'Angular Fire'
+  'Angular Fire',
 ];
 
 export const code_collection = {
@@ -28,11 +28,11 @@ export const code_collection = {
     { image: home, caption: 'Homepage' },
     { image: example, caption: 'Example' },
     { image: login, caption: 'Login' },
-    { image: add, caption: 'Add' }
+    { image: add, caption: 'Add' },
   ],
   tech_list: technologies,
   links: {
     web: 'https://useful-js.firebaseapp.com/',
-    github: 'https://github.com/jwellwood/useful-code'
-  }
+    github: 'https://github.com/jwellwood/useful-code',
+  },
 };
