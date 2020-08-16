@@ -1,10 +1,16 @@
 import React, { useContext } from 'react';
 import Zoom from 'react-reveal';
 import Typography from '@material-ui/core/Typography';
-// Internal
-import { about_data } from '../../assets/database';
-import { about_text_styles } from './styles';
-import { LanguageContext } from '../../context/LanguageContext';
+import { makeStyles } from '@material-ui/core/styles';
+import { about_data } from 'database';
+import { LanguageContext } from 'context/LanguageContext';
+
+export const about_text_styles = makeStyles((theme) => ({
+  container: {
+    width: '75%',
+    margin: 'auto',
+  },
+}));
 
 const AboutText = () => {
   const classes = about_text_styles();

@@ -1,10 +1,16 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 // Internal
-import CircleImage from '../utils/circle-image/CircleImage';
+import CircleImage from '../ui/CircleImage';
 import TechBox from './TechBox';
-import worktech from '../../assets/images/backgrounds/work-tech.jpeg';
-import { tech_styles } from './styles';
+import worktech from 'assets/images/backgrounds/work-tech.jpeg';
+import { makeStyles } from '@material-ui/core/styles';
+
+export const tech_styles = makeStyles((theme) => ({
+  root: {
+    padding: '2rem',
+  },
+}));
 
 const Tech = () => {
   const classes = tech_styles();

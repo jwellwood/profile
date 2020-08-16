@@ -1,7 +1,7 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 // Background
-import ParticlesBackground from './assets/particles/ParticlesBackground.jsx';
+import ParticlesBackground from './lib/particles/ParticlesBackground.jsx';
 // Views
 import Top from './views/Top.jsx';
 import About from './views/About.jsx';

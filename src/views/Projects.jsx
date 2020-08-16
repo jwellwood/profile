@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 // Internal
-import PortfolioGrid from '../components/portfolio/PortfolioGrid.jsx';
-import Header from '../components/utils/headers/Header.jsx';
-import SectionContainer from '../layout/containers/SectionContainer.jsx';
-import { LanguageContext } from '../context/LanguageContext.js';
-import { titles } from '../assets/database';
+import PortfolioGrid from 'components/portfolio/PortfolioGrid.jsx';
+import Header from 'components/ui/Header.jsx';
+import SectionContainer from 'layout/containers/SectionContainer.jsx';
+import { LanguageContext } from 'context/LanguageContext.js';
+import { titles } from 'database';
 
 const Projects = () => {
   const language = useContext(LanguageContext);
