@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e966379e9a51384b1b1f1452ddff5e94",
+    "revision": "b6cb23c521d3aec649a48a6239125650",
     "url": "/profile/index.html"
   },
   {
-    "revision": "c99c9ee363ab2b3ad4d4",
+    "revision": "fa3e48745997537a86f6",
     "url": "/profile/static/css/main.23eb2de5.chunk.css"
   },
   {
-    "revision": "405430959782fd5b5cf2",
-    "url": "/profile/static/js/2.0a66dd9c.chunk.js"
+    "revision": "df67fe8948cb6de90a73",
+    "url": "/profile/static/js/2.ef6df0dd.chunk.js"
   },
   {
-    "revision": "c99c9ee363ab2b3ad4d4",
-    "url": "/profile/static/js/main.f91da0e8.chunk.js"
+    "revision": "fa3e48745997537a86f6",
+    "url": "/profile/static/js/main.da47baf2.chunk.js"
   },
   {
     "revision": "189fd871db148202566e",
@@ -120,6 +120,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile/static/media/pbp-reviews.5701f870.png"
   },
   {
+    "revision": "4db1eded5f579fdd33746ca8f365c852",
+    "url": "/profile/static/media/poker-cover.4db1eded.jpg"
+  },
+  {
+    "revision": "a6dbfa2efe120992d8e35367edd4169f",
+    "url": "/profile/static/media/poker-game.a6dbfa2e.png"
+  },
+  {
+    "revision": "a4d4128bfe6956fbac97ca313d5123ee",
+    "url": "/profile/static/media/poker-home.a4d4128b.png"
+  },
+  {
+    "revision": "e43ddd613f017626a47e2d8555310a46",
+    "url": "/profile/static/media/poker-player.e43ddd61.png"
+  },
+  {
+    "revision": "d0b8c9c4880512a1171ca8e2aec0e832",
+    "url": "/profile/static/media/poker-rankings.d0b8c9c4.png"
+  },
+  {
     "revision": "b15b1e7da6bdda468a09e8056e98f8a5",
     "url": "/profile/static/media/profile.b15b1e7d.jpg"
   },
@@ -150,6 +170,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e85c883d659e647016763ef491596c02",
     "url": "/profile/static/media/report.e85c883d.jpeg"
+  },
+  {
+    "revision": "12e4842da4d74c0dedcdc9f0809659d8",
+    "url": "/profile/static/media/running-cover.12e4842d.jpg"
+  },
+  {
+    "revision": "1340cf88843ad88e7e01294f3de87b84",
+    "url": "/profile/static/media/shopping-cover.1340cf88.jpg"
+  },
+  {
+    "revision": "4f4e75b0f63f579224608716a70aa865",
+    "url": "/profile/static/media/ssl-current-lists.4f4e75b0.png"
+  },
+  {
+    "revision": "7f1512873306e3bed8562d5124c51163",
+    "url": "/profile/static/media/ssl-light.7f151287.png"
+  },
+  {
+    "revision": "1c0e78c3ca346db52f38818f8bc17915",
+    "url": "/profile/static/media/ssl-list.1c0e78c3.png"
+  },
+  {
+    "revision": "6ee9befa97bec08ef579ce38627fd51a",
+    "url": "/profile/static/media/ssl-problem.6ee9befa.png"
   },
   {
     "revision": "2dddea8fa757b46552399699dd595afd",
