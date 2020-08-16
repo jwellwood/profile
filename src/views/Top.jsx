@@ -1,8 +1,8 @@
 import React from 'react';
 // Internal
-import SectionContainer from '../layout/containers/SectionContainer';
-import Navbar from '../layout/navs/navbar/Navbar';
-import IntroText from '../components/top/IntroText';
+import SectionContainer from 'layout/containers/SectionContainer';
+import Navbar from 'layout/navs/navbar/Navbar';
+import IntroText from 'components/top/IntroText';
 
 const Top = () => {
   return (

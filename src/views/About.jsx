@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 // Internal
-import AboutSection from '../components/about/AboutSection';
-import Header from '../components/utils/headers/Header';
-import SectionContainer from '../layout/containers/SectionContainer';
-import { LanguageContext } from '../context/LanguageContext';
-import { titles } from '../assets/database';
+import AboutSection from 'components/about/AboutSection';
+import Header from 'components/ui/Header';
+import SectionContainer from 'layout/containers/SectionContainer';
+import { LanguageContext } from 'context/LanguageContext';
+import { titles } from 'database';
 
 const About = () => {
   const language = useContext(LanguageContext);

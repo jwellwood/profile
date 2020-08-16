@@ -5,13 +5,13 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 // Internal
 import SideDrawer from '../side-drawer/SideDrawer.jsx';
-import Email from '../../../components/utils/email/Email.jsx';
-import { links } from '../../../assets/database/links';
+import Email from 'components/email/Email.jsx';
+import { links } from 'database/links';
 import { nav_content_styles } from './styles';
 
 const buttons = [
   { icon: ['fab', 'github'], link: links.github, label: 'github' },
-  { icon: ['fab', 'linkedin'], link: links.linkedin, label: 'linked-in' }
+  { icon: ['fab', 'linkedin'], link: links.linkedin, label: 'linked-in' },
 ];
 
 const NavContent = () => {
@@ -20,7 +20,7 @@ const NavContent = () => {
     <Toolbar className={classes.root}>
       <SideDrawer />
       <div>
-        {buttons.map(button => (
+        {buttons.map((button) => (
           <IconButton
             key={button.label}
             aria-label={button.label}

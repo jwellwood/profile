@@ -7,7 +7,7 @@ import Avatar from '@material-ui/core/Avatar';
 import ListItemText from '@material-ui/core/ListItemText';
 // Internal
 import { nav_drawer_list_styles } from './styles';
-import { LanguageContext } from '../../../context/LanguageContext';
+import { LanguageContext } from 'context/LanguageContext';
 
 const NavLanguage = () => {
   const language = useContext(LanguageContext);

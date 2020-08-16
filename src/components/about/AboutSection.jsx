@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-// Internal
 import AboutImage from './AboutImage';
 import AboutText from './AboutText';
 

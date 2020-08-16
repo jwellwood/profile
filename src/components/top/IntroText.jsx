@@ -3,17 +3,43 @@ import Zoom from 'react-reveal';
 import Flip from 'react-reveal';
 import Typography from '@material-ui/core/Typography';
 // Internal
-import Header from '../utils/headers/Header';
-import { top_data } from '../../assets/database';
-import { intro_styles } from './styles';
-import { LanguageContext } from '../../context/LanguageContext';
+import Header from '../ui/Header';
+import { top_data } from 'database';
+
+import { LanguageContext } from 'context/LanguageContext';
+
+import { makeStyles } from '@material-ui/core/styles';
+
+export const intro_styles = makeStyles((theme) => ({
+  '@keyframes blinker': {
+    from: { color: 'inherit' },
+    to: { color: 'transparent' },
+  },
+  bar: {
+    color: theme.palette.secondary.light,
+    animationName: '$blinker',
+    animationDuration: '1s',
+    animationTimingFunction: 'linear',
+    animationIterationCount: 'infinite',
+    height: '100%',
+  },
+  name: {
+    fontFamily: 'Dosis',
+    color: '#fff',
+    margin: '2rem',
+    fontSize: '90px',
+  },
+  location: {
+    color: theme.palette.secondary.light,
+  },
+}));
 
 const IntroText = () => {
   const classes = intro_styles();
   const language = useContext(LanguageContext);
   const data = {
     title: '{ j.w }',
-    text: language.language ? top_data.eng : top_data.esp
+    text: language.language ? top_data.eng : top_data.esp,
   };
   return (
     <React.Fragment>

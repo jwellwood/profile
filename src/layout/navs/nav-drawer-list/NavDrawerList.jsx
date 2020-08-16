@@ -9,9 +9,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 // Internal
 import { nav_drawer_list_styles } from './styles';
-import { scrollToElement } from '../../../components/utils/scroller/scroller';
-import { LanguageContext } from '../../../context/LanguageContext';
-import { nav_data } from '../../../assets/database';
+import { scrollToElement } from 'components/utils/scroller';
+import { LanguageContext } from 'context/LanguageContext';
+import { nav_data } from 'database';
 import NavLanguage from './NavLanguage';
 
 const NavDrawerList = ({ onClose }) => {
@@ -20,11 +20,11 @@ const NavDrawerList = ({ onClose }) => {
 
   return (
     <List className={classes.list}>
-      {nav_data.map(icon => (
+      {nav_data.map((icon) => (
         <ListItem
           key={icon.text.eng}
           className={classes.listItem}
-          onClick={e => {
+          onClick={(e) => {
             scrollToElement(icon.scroll);
             onClose();
           }}

@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 // MUI Theme
-import { MuiThemeProvider } from '@material-ui/core';
-import { theme } from './assets/theme/theme';
+import { MuiThemeProvider, CssBaseline } from '@material-ui/core';
+import { theme } from 'lib/theme/theme';
 //  fontawesome library
-import './assets/icons/fontawesome';
+import 'assets/icons/fontawesome';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
+    <CssBaseline />
     <App />
   </MuiThemeProvider>,
   document.getElementById('root')
