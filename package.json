@@ -10,6 +10,12 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@material-ui/core": "^4.9.0",
     "@material-ui/icons": "^4.5.1",
+    "@types/jest": "^26.0.13",
+    "@types/node": "^14.6.4",
+    "@types/react": "^16.9.49",
+    "@types/react-copy-to-clipboard": "^4.3.0",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-scroll": "^1.8.0",
     "eslint-utils": "^1.4.2",
     "node-sass": "^4.13.1",
     "react": "^16.8.6",
@@ -18,7 +24,8 @@
     "react-particles-js": "^2.7.0",
     "react-reveal": "^1.2.2",
     "react-scripts": "3.0.1",
-    "react-scroll": "^1.7.12"
+    "react-scroll": "^1.7.12",
+    "typescript": "^3.9.5"
   },
   "scripts": {
     "start": "react-scripts start",

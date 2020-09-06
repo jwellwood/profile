@@ -15,4 +15,4 @@ A place to highlight my professional skills and experience, and to keep a record
 
 ## Where is the data
 
-The data is stored locally in the assets/database and brought into components where necessary via imports/props. The database structure means it is easy to identify portions of text and change them if necesary, and also means the projects folder can be updated as and when without having to change code.
+The data is stored locally in the database folder and brought into components where necessary via imports/props. The database structure means it is easy to identify portions of text and change them if necessary, and also means the projects folder can be updated as and when.
