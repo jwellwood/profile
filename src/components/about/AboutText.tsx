@@ -4,6 +4,9 @@ import Typography from '@material-ui/core/Typography';
 import { about_data } from 'database';
 import { LanguageContext } from 'context/LanguageContext';
 import { about_text_styles } from './styles';
+// import { intl } from 'react-intl';
+
+// const message = intl.formatMessage({ id: 'about-title' });
 
 const AboutText: React.FC = () => {
   const classes = about_text_styles();
