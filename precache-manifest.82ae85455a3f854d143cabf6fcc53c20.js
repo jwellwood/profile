@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "26e870483f824c69fcbad2c2e96932de",
+    "revision": "babb600e1237be1fbde2dea2ed1df5e3",
     "url": "/profile/index.html"
   },
   {
-    "revision": "8e461562fd546af970ae",
-    "url": "/profile/static/js/2.8492701d.chunk.js"
+    "revision": "57040566362072e51f8d",
+    "url": "/profile/static/js/2.f3a086bf.chunk.js"
   },
   {
-    "revision": "ae498e296821a135515b",
-    "url": "/profile/static/js/main.691d128b.chunk.js"
+    "revision": "a0751ba16206a18f3b94",
+    "url": "/profile/static/js/main.584cfb57.chunk.js"
   },
   {
     "revision": "189fd871db148202566e",
@@ -42,26 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2b37dba047eb13f84f833177705d615c",
     "url": "/profile/static/media/code.2b37dba0.jpeg"
-  },
-  {
-    "revision": "a6edde0b59c541d56d779a02b388c0b9",
-    "url": "/profile/static/media/face-about.a6edde0b.png"
-  },
-  {
-    "revision": "19d957c7a5d43a1d32a68eb281a6fad8",
-    "url": "/profile/static/media/face-detect.19d957c7.png"
-  },
-  {
-    "revision": "7c4be5cbefc6fbe72fae38fba5c9a008",
-    "url": "/profile/static/media/face-home.7c4be5cb.png"
-  },
-  {
-    "revision": "ef43a359bafacc5bee1c22b00498802d",
-    "url": "/profile/static/media/face-main.ef43a359.png"
-  },
-  {
-    "revision": "cf1b5486addaada5f8c0119d4dbed1df",
-    "url": "/profile/static/media/face.cf1b5486.jpg"
   },
   {
     "revision": "ce337856d527021a606a3e0764ab429f",
@@ -168,10 +148,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile/static/media/report.e85c883d.jpeg"
   },
   {
-    "revision": "12e4842da4d74c0dedcdc9f0809659d8",
-    "url": "/profile/static/media/running-cover.12e4842d.jpg"
-  },
-  {
     "revision": "1340cf88843ad88e7e01294f3de87b84",
     "url": "/profile/static/media/shopping-cover.1340cf88.jpg"
   },
@@ -194,22 +170,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2dddea8fa757b46552399699dd595afd",
     "url": "/profile/static/media/vegan.2dddea8f.jpeg"
-  },
-  {
-    "revision": "06cd168e99d57a4b9f6b3af8852a8933",
-    "url": "/profile/static/media/weather-forecast.06cd168e.png"
-  },
-  {
-    "revision": "b9400a5d45db65c21a51786c17a33d03",
-    "url": "/profile/static/media/weather-home.b9400a5d.png"
-  },
-  {
-    "revision": "02415ac7d36dd999d1ddcc58cd45fede",
-    "url": "/profile/static/media/weather-main.02415ac7.png"
-  },
-  {
-    "revision": "7becf1595eec42ec20b223e3731af4f6",
-    "url": "/profile/static/media/weather.7becf159.jpeg"
   },
   {
     "revision": "ef3608beeff3544f0bf30b3871df49be",
