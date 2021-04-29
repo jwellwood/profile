@@ -31,7 +31,7 @@ const PortfolioImages: React.FC<Props> = ({ images, language, ...props }) => {
   };
   return (
     <React.Fragment>
-      <Subheader>{header}</Subheader>
+      {images.length ? <Subheader>{header}</Subheader> : null}
       <div className={classes.root}>
         <GridList
           className={classes.gridList}

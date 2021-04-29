@@ -20,7 +20,7 @@ const PortfolioLinks: React.FC<Props> = ({ links, handleClose }) => {
   const classes = link_styles();
   const lang = useContext(LanguageContext);
 
-  const buttons: IButton[] = [
+  const buttons: IButton[] | any = [
     {
       text: lang.language ? button_data.web.eng : button_data.web.esp,
       type: 'contained',
@@ -30,19 +30,21 @@ const PortfolioLinks: React.FC<Props> = ({ links, handleClose }) => {
   ];
   return (
     <React.Fragment>
-      {buttons.map((button: any) => (
-        <Button
-          key={button.text}
-          variant={button.type}
-          target='_blank'
-          rel='noopener noreferrer'
-          href={button.link}
-          color='primary'
-          className={classes.button}
-        >
-          {button.text}
-        </Button>
-      ))}
+      {buttons.map((button: any) =>
+        button.link ? (
+          <Button
+            key={button.text}
+            variant={button.type}
+            target='_blank'
+            rel='noopener noreferrer'
+            href={button.link}
+            color='primary'
+            className={classes.button}
+          >
+            {button.text}
+          </Button>
+        ) : null
+      )}
       <Button onClick={handleClose} color='primary' autoFocus>
         {lang.language ? button_data.back.eng : button_data.back.esp}
       </Button>
