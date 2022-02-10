@@ -17,7 +17,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-scroll": "^1.8.0",
     "eslint-utils": "^1.4.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.6",
