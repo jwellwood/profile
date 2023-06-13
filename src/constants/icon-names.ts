@@ -1,28 +1,38 @@
-import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core';
+export enum AppIcons {
+  ARROW_UP = 'arrow-up',
+  USER = 'user',
+  TECH = 'tech',
+  PROJECTS = 'projects',
+  EMAIL = 'email',
+  LANGUAGE = 'language',
+  COPY = 'copy',
+  CHECK = 'check',
+  DESKTOP = 'desktop',
+  TABLET = 'tablet',
+  MOBILE = 'mobile',
+  USERS = 'users',
+  NETWORK = 'network',
+  PERSON = 'person',
+  SKILLS = 'skills',
+  DEVICES = 'devices',
+  EXPERIENCE = 'experience',
+}
 
-export const arrowUp = 'arrow-up';
-export const user = 'user';
-export const tech = 'sitemap';
-export const projects = 'grip-horizontal';
-export const email = 'envelope';
-export const language = 'language';
+export enum TechIcons {
+  HTML = 'html',
+  SASS = 'sass',
+  JS = 'js',
+  TS = 'ts',
+  REACT = 'react',
+  ANGULAR = 'angular',
+  GRAPH_QL = 'graph_ql',
+  MONGO_DB = 'mongo_db',
+  TESTING_LIB = 'testing_lib',
+  CYPRESS = 'cypress',
+  FIREBASE = 'firebase',
+}
 
-export const copy = 'copy';
-export const check = 'check';
-
-export const linkedin: [IconPrefix, IconName] = ['fab', 'linkedin'];
-export const github: [IconPrefix, IconName] = ['fab', 'github'];
-
-export const html: [IconPrefix, IconName] = ['fab', 'html5'];
-export const sass: [IconPrefix, IconName] = ['fab', 'sass'];
-export const js: [IconPrefix, IconName] = ['fab', 'js-square'];
-export const react: [IconPrefix, IconName] = ['fab', 'react'];
-export const angular: [IconPrefix, IconName] = ['fab', 'angular'];
-
-export const desktop = 'desktop';
-export const tablet = 'tablet-alt';
-export const mobile = 'mobile-alt';
-
-export const users = 'user-friends';
-export const globe = 'globe-europe';
-export const network = 'network-wired';
+export enum LinkIcons {
+  LINKEDIN = 'linked-in',
+  GITHUB = 'github',
+}

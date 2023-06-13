@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Particles from 'react-tsparticles';
-import particles from './pjs-config.json';
+import { loadFull } from 'tsparticles';
+import { particles } from './config';
 
-const particles_styles = {
-  position: 'fixed',
-  zIndex: '-1',
-  left: 0,
-  top: 0,
-  width: '100%',
-  height: '100vh',
+const ParticlesBackground: React.FC = () => {
+  const particlesInit = async (main: any) => {
+    await loadFull(main);
+  };
+  return (
+    <Particles
+      id='particles-here'
+      init={particlesInit}
+      options={particles}
+      style={{ zIndex: 1 }}
+    />
+  );
 };
 
-export default class ParticlesBackground extends Component {
-  render() {
-    return <Particles style={particles_styles} params={particles} />;
-  }
-}
+export default ParticlesBackground;

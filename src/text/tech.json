@@ -1,0 +1,22 @@
+{
+  "title": {
+    "en": "How I work",
+    "es": "Como trabajo"
+  },
+  "subtitles": {
+    "en": ["Technologies", "Responsive Design", "Collaboration"],
+    "es": ["Technologías", "Diseño Responsivo", "Colaboración"]
+  },
+  "technologies": {
+    "en": "I use the latest technologies in web development - including JS libraries and frameworks such as React and Angular",
+    "es": "Utilizo las tecnologías más actualizadas en el mundo de desarrollo - incluso librerías y frameworks como React y Angular"
+  },
+  "design": {
+    "en": "I design mobile first web apps which look and feel great on any device",
+    "es": "Diseño aplicaciones que tienen buen aspecto en cualquier dispositivo"
+  },
+  "collaboration": {
+    "en": "I believe that working closely with others in the industry is the best way improve, and to build amazing things",
+    "es": "Creo que trabajar con otros desarrolladores es la mejor manera a mejorar, y crear cosas muy interesantes"
+  }
+}

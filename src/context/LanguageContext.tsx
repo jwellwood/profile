@@ -1,24 +1,27 @@
 import React, { useState, ReactNode } from 'react';
 
 export interface ILang {
-  language: boolean;
+  language: string;
   toggleLanguage: () => void;
 }
 
 interface Props {
   children: ReactNode;
 }
-// Create new context
+
 export const LanguageContext = React.createContext<Partial<ILang>>({
-  language: false,
+  language: '',
 });
 
-// Then create a Provider Component
 export const LanguageProvider: React.FC<Props> = ({ children }) => {
-  const [language, setLanguage] = useState(true);
+  const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
-    setLanguage(!language);
+    if (language === 'en') {
+      setLanguage('es');
+    } else {
+      setLanguage('en');
+    }
   };
 
   return (

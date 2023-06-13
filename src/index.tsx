@@ -1,22 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
-// MUI Theme
-import { MuiThemeProvider, CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@mui/material';
+import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
 import { theme } from 'lib/theme/theme';
-//  fontawesome library
-import 'assets/icons/fontawesome';
-import * as serviceWorker from './serviceWorker';
+import App from 'app/App';
 
 ReactDOM.render(
-  <MuiThemeProvider theme={theme}>
-    <CssBaseline />
-    <App />
-  </MuiThemeProvider>,
+  <StyledEngineProvider injectFirst>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
+  </StyledEngineProvider>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

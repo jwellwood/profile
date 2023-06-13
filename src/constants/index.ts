@@ -1,2 +1,2 @@
 export * from './links';
-export { brandColors } from './brand-colors';
+export * from './icon-names';

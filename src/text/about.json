@@ -1,0 +1,26 @@
+{
+  "title": {
+    "en": "About Me",
+    "es": "Sobre Mí"
+  },
+  "subtitles": {
+    "en": ["Background", "Experience", "Skills"],
+    "es": ["Background", "Experiencia", "Habilidades"]
+  },
+  "tagline": {
+    "en": "I love clean, simple, reusable code",
+    "es": "Me encanta el código limpio, sencillo, y reutilizable"
+  },
+  "background": {
+    "en": "I am a web developer from the UK based in Madrid, Spain",
+    "es": "Soy desarrollador web de Reino Unido basado en Madrid, España"
+  },
+  "experience": {
+    "en": "I have over 5 years' experience in the industry - working with people all over the world to deliver high quality products",
+    "es": "Llevo 5 años en la industria, trabajando con gente de todos partes del mundo para entregar productos de alta calidad"
+  },
+  "skills": {
+    "en": "As a former teacher, I understand the importance of communication, and I am fluent in both English and Spanish. I always ensure my work is relevant, and that my skillset is continually updated",
+    "es": "Como era profesor anteriormente, entiendo la importancia de la comunicación, y hablo inglés (nativo) y español. Siempre aseguro que mi trabajo queda muy relevante y que estoy actualizando mis conocimientos"
+  }
+}

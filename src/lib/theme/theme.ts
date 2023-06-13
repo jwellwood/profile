@@ -1,11 +1,11 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-import blue from '@material-ui/core/colors/blue';
-import grey from '@material-ui/core/colors/grey';
+import blue from '@mui/material/colors/blue';
+import grey from '@mui/material/colors/grey';
+import { createTheme } from '@mui/material/styles';
 
-export const theme = createMuiTheme({
+export const theme = createTheme({
   palette: {
     primary: {
-      main: blue['A400'],
+      main: blue['A700'],
     },
     secondary: {
       main: grey[50],
@@ -14,11 +14,4 @@ export const theme = createMuiTheme({
   typography: {
     fontFamily: 'Questrial, sans-serif',
   },
-  // overrides: {
-  //   Mui???: {
-  //     root: {
-  //       style here...
-  //     }
-  //   }
-  // }
 });
