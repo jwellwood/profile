@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "link": "https://www.ing.es/",
+    "tech": [
+      "Lit Element",
+      "Javascript",
+      "Storybook",
+      "Pact",
+      "Lighthouse",
+      "Jest"
+    ]
+  },
+  {
+    "id": 2,
+    "link": "https://www.inditex.com/itxcomweb/es/en/home",
+    "tech": ["React", "Redux", "GraphQL", "Storybook", "React Testing Lib"]
+  },
+  {
+    "id": 3,
+    "link": "https://www.jti.com/en",
+    "tech": ["React", "Redux", "Material UI"]
+  },
+  {
+    "id": 4,
+    "link": "https://www.britishcouncil.es/en",
+    "tech": []
+  }
+]

@@ -1,28 +1,29 @@
-import { Paper } from '@mui/material';
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from "react";
+import { styled } from "@mui/material/styles";
+import { Box, Paper } from "@mui/material";
+import { theme } from "../../lib/theme/theme";
+import { useScreenSize } from "../../hooks/useScreenSize";
 
 type Props = {
   children: ReactElement;
-  maxWidth?: number;
-  color?: string;
+  type: "menu" | "content";
 };
 
-const CustomPaper: React.FC<Props> = ({
-  children,
-  color,
-  maxWidth = '100%',
-}) => {
+export default function CustomPaper({ children, type }: Props) {
+  const { isSmallScreen } = useScreenSize();
+  const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: "rgba(255, 255, 255, 0.05)",
+    zIndex: 1,
+    position: "relative",
+    ...theme.typography.body2,
+    textAlign: "center",
+    color: "#fff",
+    height: isSmallScreen && type === "content" ? "100vh" : "640px",
+    overflow: "scroll",
+  }));
   return (
-    <Paper
-      sx={{
-        width: '100%',
-        maxWidth,
-        background: color || 'rgba(255,255,255,0.7)',
-      }}
-    >
-      {children}
-    </Paper>
+    <Item>
+      <Box m={theme.spacing(4)}>{children}</Box>
+    </Item>
   );
-};
-
-export default CustomPaper;
+}

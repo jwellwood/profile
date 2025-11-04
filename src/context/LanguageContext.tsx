@@ -1,31 +1,30 @@
-import React, { useState, ReactNode } from 'react';
+import React, { useState, ReactNode } from "react";
+
+type SupportedLanguages = "en" | "es";
 
 export interface ILang {
-  language: string;
-  toggleLanguage: () => void;
+  language: SupportedLanguages;
+  setLang: (lang: SupportedLanguages) => void;
 }
 
 interface Props {
   children: ReactNode;
 }
 
-export const LanguageContext = React.createContext<Partial<ILang>>({
-  language: '',
+export const LanguageContext = React.createContext<ILang>({
+  language: "en" as SupportedLanguages,
+  setLang: () => {},
 });
 
 export const LanguageProvider: React.FC<Props> = ({ children }) => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState<SupportedLanguages>("en");
 
-  const toggleLanguage = () => {
-    if (language === 'en') {
-      setLanguage('es');
-    } else {
-      setLanguage('en');
-    }
+  const setLang = (lang: SupportedLanguages) => {
+    setLanguage(lang);
   };
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage }}>
+    <LanguageContext.Provider value={{ language, setLang }}>
       {children}
     </LanguageContext.Provider>
   );

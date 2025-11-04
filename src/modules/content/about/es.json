@@ -1,0 +1,30 @@
+{
+  "title": "Sobre mí",
+  "sections": [
+    {
+      "subtitle": "Background",
+      "description": [
+        "¡Hola! Soy un desarrollador web de Reino Unido, actualmente con base en Madrid, España.",
+        "Comencé trabajando como profesor antes de cambiarme al desarrollo web en 2020, y desde entonces he tenido la suerte de colaborar con varios equipos increíbles en proyectos importantes dentro de los sectores del comercio minorista, la banca y el comercio internacional.",
+        "Soy hablante nativo de inglés y tengo un nivel fluido de español. Me encanta poder combinar mi experiencia en programación con mis anteriores funciones en el ámbito educativo.",
+        "En mi tiempo libre me apasionan los deportes, tocar el bajo y, por supuesto, crear sitios web."
+      ]
+    },
+
+    {
+      "subtitle": "Tech",
+      "description": ["Technologias con que he estado trabajando ultimamente:"],
+      "list": [
+        { "id": 1, "name": "React" },
+        { "id": 2, "name": "NextJS" },
+        { "id": 3, "name": "Angular" },
+        { "id": 4, "name": "Lit Element" },
+        { "id": 5, "name": "JS / TS" },
+        { "id": 6, "name": "Material UI" },
+        { "id": 7, "name": "NodeJS" },
+        { "id": 8, "name": "MongoDB" },
+        { "id": 9, "name": "¡y muchos más!" }
+      ]
+    }
+  ]
+}

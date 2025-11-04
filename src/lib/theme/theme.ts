@@ -1,17 +1,35 @@
-import blue from '@mui/material/colors/blue';
-import grey from '@mui/material/colors/grey';
-import { createTheme } from '@mui/material/styles';
+import { cyan, grey, pink } from "@mui/material/colors";
+import { createTheme } from "@mui/material/styles";
+
+declare module "@mui/material/styles" {
+  interface Palette {
+    highlight: Palette["primary"];
+  }
+
+  interface PaletteOptions {
+    highlight?: PaletteOptions["primary"];
+  }
+}
+
+declare module "@mui/material/Chip" {
+  interface ChipPropsColorOverrides {
+    highlight: true;
+  }
+}
 
 export const theme = createTheme({
   palette: {
     primary: {
-      main: blue['A700'],
+      main: cyan["A200"],
     },
     secondary: {
-      main: grey[50],
+      main: grey[300],
+    },
+    highlight: {
+      main: pink["A400"],
     },
   },
   typography: {
-    fontFamily: 'Questrial, sans-serif',
+    fontFamily: "Lexend, sans-serif",
   },
 });

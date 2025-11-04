@@ -1,0 +1,32 @@
+{
+  "title": "About",
+  "sections": [
+    {
+      "subtitle": "Background",
+      "description": [
+        "Hi! I am a web developer from the UK based in Madrid, Spain",
+        "I began working as a teacher before making the change to web dev in 2020, and since then I've been fortunate enough to work with several amazing teams in important projects in the retail, banking, and trade sectors",
+        "I'm a native English speaker and fluent in Spanish, and love being able to combine my experience in coding with my previous roles in education",
+        "In my spare time I love sports, playing bass guitar, and of course, building websites"
+      ]
+    },
+
+    {
+      "subtitle": "Tech",
+      "description": [
+        "Here are some of the technologies I've worked with recently"
+      ],
+      "list": [
+        { "id": 1, "name": "React" },
+        { "id": 2, "name": "NextJS" },
+        { "id": 3, "name": "Angular" },
+        { "id": 4, "name": "Lit Element" },
+        { "id": 5, "name": "JS / TS" },
+        { "id": 6, "name": "Material UI" },
+        { "id": 7, "name": "NodeJS" },
+        { "id": 8, "name": "MongoDB" },
+        { "id": 9, "name": "and many more!" }
+      ]
+    }
+  ]
+}

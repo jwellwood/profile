@@ -8,4 +8,13 @@
   padding: 2rem;
   align-content: center;
   position: relative;
+  /* background-color: #010100; */
+}
+
+.link {
+  opacity: 0.85;
+}
+
+.link:hover {
+  opacity: 1;
 }

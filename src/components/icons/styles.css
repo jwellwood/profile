@@ -1,0 +1,30 @@
+.icon-md {
+  font-size: 20px;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.icon-md-animate {
+  font-size: 20px;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.icon-sm {
+  font-size: 16px;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.icon-sm-animate {
+  font-size: 16px;
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.icon-md-animate:hover {
+  transform: scale(1.2);
+}
+.icon-sm-animate:hover {
+  transform: scale(1.2);
+}

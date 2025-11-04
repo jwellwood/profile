@@ -1,36 +1,45 @@
-import React from 'react';
-import { Element } from 'react-scroll';
-import { LanguageProvider } from 'context/LanguageContext';
-import ParticlesBackground from 'lib/particles/ParticlesBackground';
-import Top from 'modules/top/Top';
-import About from 'modules/about/About';
-import Projects from 'modules/projects/Projects';
-import Contact from 'modules/contact/Contact';
-import Technologies from 'modules/tech/Technologies';
-import { scrollNames } from 'constants/scroll-names';
+import React from "react";
+import { Element } from "react-scroll";
 
-const App: React.FC = () => {
-  const { top, about, tech, projects, contact } = scrollNames;
+import ParticlesBackground from "../lib/particles/ParticlesBackground";
+import { SCROLL_NAMES } from "../constants";
+import { LanguageProvider } from "../context/LanguageContext";
+import { SectionProvider } from "../context/SectionContext";
+import Home from "../modules/home/Home";
+import GridLayout from "../modules/layout/GridLayout";
+import Footer from "../modules/footer/Footer";
+import { useScreenSize } from "../hooks/useScreenSize";
+import Menu from "../modules/content/menu/Menu";
+import Content from "../modules/content/Content";
+
+export default function App() {
+  const { home, details, content, footer } = SCROLL_NAMES;
+  const { isSmallScreen } = useScreenSize();
   return (
     <LanguageProvider>
       <ParticlesBackground />
-      <Element name={top}>
-        <Top />
-      </Element>
-      <Element name={about}>
-        <About />
-      </Element>
-      <Element name={tech}>
-        <Technologies />
-      </Element>
-      <Element name={projects}>
-        <Projects />
-      </Element>
-      <Element name={contact}>
-        <Contact />
-      </Element>
+      <SectionProvider>
+        <Element name={home}>
+          <Home />
+        </Element>
+        {isSmallScreen ? (
+          <>
+            <Element name={details}>
+              <Menu />
+            </Element>
+            <Element name={content}>
+              <Content />
+            </Element>
+          </>
+        ) : (
+          <Element name={content}>
+            <GridLayout />
+          </Element>
+        )}
+        <Element name={footer}>
+          <Footer />
+        </Element>
+      </SectionProvider>
     </LanguageProvider>
   );
-};
-
-export default App;
+}

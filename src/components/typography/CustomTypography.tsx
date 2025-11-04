@@ -1,6 +1,6 @@
-import React, { ReactElement } from 'react';
-import { Typography } from '@mui/material';
-import { theme } from 'lib/theme/theme';
+import React, { ReactElement } from "react";
+import { Typography } from "@mui/material";
+import { theme } from "../../lib/theme/theme";
 
 type Props = {
   children: string | ReactElement;
@@ -12,14 +12,14 @@ type Props = {
 const CustomTypography: React.FC<Props> = ({
   children,
   color = theme.palette.primary.main,
-  size = '14px',
+  size = "14px",
   bold = false,
 }) => {
   return (
     <Typography
       color={color}
       fontSize={size}
-      sx={{ fontWeight: bold ? 'bold' : '' }}
+      sx={{ fontWeight: bold ? "bold" : "" }}
     >
       {children}
     </Typography>

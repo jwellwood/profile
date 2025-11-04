@@ -1,7 +1,6 @@
-export const scrollNames = {
-  top: 'top',
-  tech: 'tech',
-  projects: 'projects',
-  contact: 'contact',
-  about: 'about',
+export const SCROLL_NAMES = {
+  home: "home",
+  details: "details",
+  content: "content",
+  footer: "footer",
 };

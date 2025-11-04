@@ -1,62 +1,64 @@
-import React from 'react';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import SideDrawer from '../drawer/SideDrawer';
+import React from "react";
+import CopyToClipboard from "react-copy-to-clipboard";
+import Toolbar from "@mui/material/Toolbar";
+import { Button, ButtonGroup } from "@mui/material";
 
-import * as links from 'constants/links';
-import { AppIcons, LinkIcons } from 'constants/icon-names';
-import CustomIcon from 'components/icons/CustomIcon';
-import { theme } from 'lib/theme/theme';
-import CustomPopper from 'components/popper/CustomPopper';
+import { LINKS_LIST } from "../../constants";
+import { AppIcons } from "../../constants/icon-names";
+import CustomIcon from "../../components/icons/CustomIcon";
+import { theme } from "../../lib/theme/theme";
+import { useCopy } from "../../hooks/useCopy";
+import NavLanguage from "./NavLanguage";
 
-const buttons = [
-  { icon: LinkIcons.GITHUB, link: links.github, label: 'github' },
-  {
-    icon: LinkIcons.LINKEDIN,
-    link: links.linkedin,
-    label: 'linked-in',
-  },
-];
+export default function NavContent() {
+  const { copied, onCopy } = useCopy();
 
-const NavContent: React.FC = () => {
   return (
     <Toolbar
       sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
       }}
     >
-      <SideDrawer />
-      <div style={{ display: 'flex' }}>
-        {buttons.map((button) => (
-          <IconButton
-            key={button.label}
-            aria-label={button.label}
-            target='_blank'
-            rel='noopener noreferrer'
-            href={button.link}
-            size='small'
-            sx={{ backgroundColor: theme.palette.primary.main }}
-          >
-            <CustomIcon name={button.icon} />
-          </IconButton>
-        ))}
-
-        <CustomPopper>
-          <IconButton
-            aria-label='email'
-            size='small'
-            sx={{
-              backgroundColor: theme.palette.primary.main,
-            }}
-          >
-            <CustomIcon name={AppIcons.EMAIL} />
-          </IconButton>
-        </CustomPopper>
-      </div>
+      <NavLanguage />
+      <ButtonGroup variant="text" sx={{ cursor: "pointer" }}>
+        {LINKS_LIST.map((item) => {
+          const link = (
+            <Button
+              key={item.label}
+              aria-label={item.label}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={item.link}
+              color="info"
+            >
+              <CustomIcon name={item.icon} animate />
+            </Button>
+          );
+          return item.link ? (
+            link
+          ) : (
+            <Button aria-label={item.label}>
+              <CopyToClipboard text={item.label} onCopy={onCopy}>
+                <span style={{ height: "20px" }}>
+                  <CustomIcon
+                    animate
+                    name={copied ? AppIcons.CHECK : AppIcons.EMAIL}
+                    color={
+                      copied
+                        ? theme.palette.primary.light
+                        : theme.palette.info.main
+                    }
+                  />
+                </span>
+              </CopyToClipboard>
+            </Button>
+          );
+        })}
+      </ButtonGroup>
     </Toolbar>
   );
-};
+}
 
-export default NavContent;
+NavContent;

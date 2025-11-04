@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "link": "https://madrid-reds-web-1035582858411.northamerica-northeast2.run.app/",
+    "tech": [
+      "React",
+      "Typescript",
+      "GraphQL",
+      "Material UI",
+      "MongoDB",
+      "Google Cloud",
+      "Vite"
+    ]
+  },
+  {
+    "id": 2,
+    "link": "https://thursball.vercel.app/",
+    "code": "",
+    "tech": [
+      "NextJS",
+      "Typescript",
+      "NextAuth",
+      "Mantine",
+      "Prisma",
+      "PostgreSQL",
+      "Vercel"
+    ]
+  },
+  {
+    "id": 3,
+    "link": "https://jwellwood.github.io/profile",
+    "code": "",
+    "tech": ["React", "Typescript", "Material UI", "Vite", "Github Pages"]
+  },
+  {
+    "id": 4,
+    "link": "https://run-records.firebaseapp.com/",
+    "code": "",
+    "tech": ["NextJS", "NextAuth", "Tailwind", "Firebase"]
+  },
+  {
+    "id": 5,
+    "link": "https://teacher-toolkit.firebaseapp.com/",
+    "code": "",
+    "tech": ["React", "Redux", "Firebase"]
+  },
+  {
+    "id": 6,
+    "link": "https://lockdown-poker.firebaseapp.com/",
+    "code": "",
+    "tech": ["React", "Redux", "Firebase"]
+  },
+  {
+    "id": 7,
+    "link": "https://github.com/jwspain10/todo-list-angular",
+    "code": "",
+    "tech": ["Angular", "Typescript", "NG-Zorro"]
+  }
+]
