@@ -5,25 +5,25 @@
       "id": 1,
       "name": "ING España",
       "role": "Ingeniero Front",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Participé en el desarrollo de la aplicación web y móvil de banca, con un enfoque en permitir a los usuarios realizar determinadas acciones dentro de la app, reduciendo la carga de trabajo de los centros de atención telefónica y permitiendo mayor control a los usuarios finales."
     },
     {
       "id": 2,
       "name": "Inditex",
       "role": "Ingeniero Front",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Miembro clave del equipo de front-end en el desarrollo de una aplicación de Ranking: un sistema de filtrado complejo que permitió a los gerentes de negocio tomar decisiones basadas en el rendimiento de ventas de los artículos."
     },
     {
       "id": 3,
       "name": "JTI",
       "role": "Ingeniero Junior",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Trabajo en equipo en la gestión del front-end y back-end de un portal de comercio internacional. Las principales responsabilidades incluyeron la resolución de incidencias, depuración y aplicación de correcciones urgentes, así como la comunicación del progreso a los clientes y la gestión eficiente y efectiva de prioridades según cada caso."
     },
     {
       "id": 4,
       "name": "British Council",
       "role": "Profesor / Coordenador / Manager",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Profesor de diversos grupos de edad y niveles. Coordinador en la implementación y despliegue a nivel nacional de un nuevo producto educativo para estudiantes de primaria. Responsable de un pequeño equipo, encargado de su desarrollo profesional y de la gestión diaria de las operaciones del centro educativo."
     }
   ]
 }

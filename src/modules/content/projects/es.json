@@ -5,37 +5,37 @@
     {
       "id": 1,
       "name": "Football Stats",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Una aplicación que permite a los usuarios seguir los resultados y estadísticas detalladas de su equipo de fútbol."
     },
     {
       "id": 2,
       "name": "Thursball",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Una pequeña aplicación que registra los resultados y estadísticas de los partidos de fútbol jugados semanalmente entre un grupo de jugadores."
     },
     {
       "id": 3,
       "name": "Profile",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Un sitio web estático para mostrar mis proyectos, experiencia y habilidades."
     },
     {
       "id": 4,
       "name": "Run Records",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Una aplicación que registra las estadísticas de carrera de cada usuario."
     },
     {
       "id": 5,
       "name": "Report Writer",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Una aplicación que genera informes de alumnos personalizados y editables para ayudar a los profesores a ahorrar tiempo."
     },
     {
       "id": 6,
       "name": "Lockdown Poker",
-      "description": "Una app para un club de poker para mantener un record de los juegos jugados y el dinero debido etc."
+      "description": "Una aplicación creada para un club de póker que permite llevar el control de las partidas jugadas, el dinero adeudado, etc."
     },
     {
       "id": 7,
       "name": "Angular Todos",
-      "description": ""
+      "description": "Una lista de tareas estándar creada para mostrar diversas funcionalidades de Angular 20."
     }
   ]
 }

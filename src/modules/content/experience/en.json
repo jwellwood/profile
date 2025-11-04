@@ -5,25 +5,25 @@
       "id": 1,
       "name": "ING Spain",
       "role": "Front End Engineer",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Involved in developing the web and mobile banking app, with a focus on allowing users to perform certain actions in-app, reducing the workload on call centers and giving more control to end users."
     },
     {
       "id": 2,
       "name": "Inditex",
       "role": "Front End Engineer",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Key part of the front end team developing a Ranking app: a complex filtering system which allowed business managers to make decisions based on article sales performance."
     },
     {
       "id": 3,
       "name": "JTI",
       "role": "Junior Fullstack Engineer",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Working as part of a team managing the front and back end of an international trade portal. Main responsibilities included resolving incidents, debugging and hotfixing, as well as communicating progress to clients and responding efficiently and effectively to prioritise workflow on a case by case basis."
     },
     {
       "id": 4,
       "name": "British Council",
       "role": "Teacher / Coordinator / Manager",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "description": "Teacher of various age groups and levels. Coordinator collaborating on the country-wide rollout and implementation of a new teaching product for primary students. Manager of a small team, responsible for their professional development and dealing with day to day teachinhg center operations."
     }
   ]
 }

@@ -41,6 +41,7 @@ export default function AboutList({ text }: Props) {
                       return (
                         <Grid key={item.id} size={4}>
                           <Typography
+                            align="center"
                             variant="body2"
                             color={
                               item.id === list.at(-1)?.id ? "info" : "primary"

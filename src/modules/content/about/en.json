@@ -2,7 +2,7 @@
   "title": "About",
   "sections": [
     {
-      "subtitle": "Background",
+      "subtitle": "",
       "description": [
         "Hi! I am a web developer from the UK based in Madrid, Spain",
         "I began working as a teacher before making the change to web dev in 2020, and since then I've been fortunate enough to work with several amazing teams in important projects in the retail, banking, and trade sectors",
@@ -13,9 +13,7 @@
 
     {
       "subtitle": "Tech",
-      "description": [
-        "Here are some of the technologies I've worked with recently"
-      ],
+      "description": ["Technologies I've worked with recently:"],
       "list": [
         { "id": 1, "name": "React" },
         { "id": 2, "name": "NextJS" },
